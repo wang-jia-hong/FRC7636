@@ -2,19 +2,16 @@
   <v-app>
     <v-container class="d-flex justify-center">
       <FormBackground />
-      <Login />
+      <router-view></router-view>
     </v-container>
   </v-app>
 </template>
 
 <script>
-import Login from '@/views/Login'
-import FormBackground from '@/views/FormBackground';
+import FormBackground from '@/components/FormBackground';
 export default {
   name: 'App',
-
   components: {
-    Login,
     FormBackground
   },
 

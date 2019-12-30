@@ -64,7 +64,7 @@
       email: '',
       emailRules: [
         v => !!v || 'E-mail is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+        v => /.+@nehs.+\..+/.test(v) || 'E-mail must be valid',
       ],
       checkbox: false,
     }),
