@@ -53,6 +53,7 @@
 </template>
 
 <script>
+  import {db} from "@/plugins/db.js"
   export default {
     data: () => ({
       valid: true,
@@ -82,5 +83,10 @@
         this.$refs.form.resetValidation()
       },
     },
+    firebase(){
+      return{
+        dbData: db.ref("https://formal-001.firebaseio.com/"),
+      }
+    }
   }
 </script>
