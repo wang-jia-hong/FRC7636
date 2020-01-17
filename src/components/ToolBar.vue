@@ -7,7 +7,7 @@
         background-color="#222222"
         grow
       >
-        <v-tab class="white--text"> Home </v-tab>
+        <v-tab class="white--text" :href="'#tabs-1'"> Home </v-tab>
 
         <v-menu
           class="align-self-center mr-4 white--text"
@@ -27,7 +27,7 @@
             </v-btn>
           </template>
           <v-list>
-            <v-list-item  v-for="(aboutItem, index) in aboutItems" :key="index">
+            <v-list-item  v-for="(aboutItem, index) in aboutItems" :key="index" :href="'#tabs-' + index+1">
               <v-list-item-title>{{ aboutItem }}</v-list-item-title>
             </v-list-item>
           </v-list>
@@ -85,7 +85,9 @@
       </v-tabs>
 
       <v-tabs-items v-model="currentTab">
-
+          <v-tab-item
+        
+          ></v-tab-item>
       </v-tabs-items>
 
     </v-card>    

@@ -1,0 +1,32 @@
+data() => {
+    return {
+	items: [
+	    {
+		title: "xx",
+		radioSelections: [
+		    "description",
+		    "description2"
+		],
+		chekcboxSelections: [
+		    "description"
+		],
+		answer: null,
+		inputType: "radio" || "checkbox"
+	    },
+	    {
+
+	    }
+	]
+    }
+}
+
+template
+
+div v-for="item in items"
+    {{ items.title }}
+    form
+	div v-if="item.inputType == 'radio'" v-for="(radioSelection, index) in item.radioSelections" v-model="item.answer"
+	    input type="radio", :value="index"
+	    label 
+	div v-if="item.inputType == 'checkbox'"    
+
