@@ -1,28 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Login from '../views/Login.vue'
-import MainPage from '../views/MainPage.vue'
-import ProblemPage from '../views/ProblemPage.vue'
+import HomeView from '../views/HomePageView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'mainPage',
-    component: MainPage
+    name: 'HomeView',
+    component: HomeView
   },
-  {
-    path: '/Login',
-    name: 'login',
-    component: Login
-  },
-  {
-    path: '/ProblemPage',
-    name: 'problemPage',
-    component: ProblemPage
-  }
 ]
 
 const router = new VueRouter({

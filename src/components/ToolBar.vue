@@ -1,20 +1,10 @@
 <template>
   <div>
     <v-card height="1000">
-      <!-- 封面圖 -->
-      <v-card color="#002a5c">      
-        <v-img
-          aspect-ratio="3"
-          contain
-          src="../assets/Frontimg.jpg"
-        >
-        </v-img>        
-      </v-card>
-
       <v-tabs
         color="success"
-        v-model="tab"
-        background-color="transparent"
+        v-model="currentTab"
+        background-color="#222222"
         grow
       >
         <v-tab class="white--text"> Home </v-tab>
@@ -37,7 +27,7 @@
             </v-btn>
           </template>
           <v-list>
-            <v-list-item @click="" v-for="(aboutItem, index) in aboutItems" :key="index">
+            <v-list-item  v-for="(aboutItem, index) in aboutItems" :key="index">
               <v-list-item-title>{{ aboutItem }}</v-list-item-title>
             </v-list-item>
           </v-list>
@@ -92,32 +82,25 @@
         <v-tab class="white--text"> Sponsors </v-tab>
 
         <v-tab class="white--text"> login </v-tab>
-
       </v-tabs>
 
-      <v-tabs-items v-model="tab">
+      <v-tabs-items v-model="currentTab">
 
       </v-tabs-items>
 
-    </v-card>
-    <v-footer padless>
-      <v-col
-        class="text-center"
-        cols="12"
-      >
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-col>
-    </v-footer>     
+    </v-card>    
   </div>   
 </template>
+
 <script>
   export default {
     data () {
       return {
-        tab: null,
+        currentTab: null,
         aboutItems: ["About us", "History", "Calender", "Contact Us"],
         robotItems: ["HandBook","CAD","Code"],
         mediaItems: ["Photos", "Videos"],
+        
       }
     },
   }
