@@ -7,7 +7,7 @@
         background-color="#222222"
         grow
       >
-        <v-tab class="white--text" :href="'#tabs-1'"> Home </v-tab>
+        <v-tab class="white--text" :href="'#'"> Home </v-tab>
 
         <v-menu
           class="align-self-center mr-4 white--text"
@@ -58,6 +58,7 @@
         </v-menu>          
 
         <v-menu
+          class="align-self-center mr-4 white--text"
           open-on-hover
           down
           offset-y

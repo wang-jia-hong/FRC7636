@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
+import '@mdi/js'
 
 Vue.use(Vuetify);
 
@@ -16,4 +17,7 @@ export default new Vuetify({
         },
         scrollBarWidth: 24,
       },
+      icons: {
+        iconfont: 'mdiSvg'
+      }
 });

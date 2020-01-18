@@ -6,7 +6,8 @@
     <v-card
       flat
       tile
-      class="indigo lighten-1 white--text text-center"
+      color="#02295c"
+      class="col-12 white--text text-center"
     >
       <v-card-text>
         <v-btn
@@ -19,8 +20,8 @@
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      <v-card-text class="white--text pt-0 ">
+        Text Right Here
       </v-card-text>
 
       <v-divider></v-divider>
@@ -32,11 +33,10 @@
   export default {
     data: () => ({
       icons: [
-        'fab fa-facebook',
-        'fab fa-twitter',
-        'fab fa-google-plus',
-        'fab fa-linkedin',
-        'fab fa-instagram',
+        'mdi-facebook',
+        'mdi-youtube',
+        'mdi-instagram',
+        'mdi-email'
       ],
     }),
   }
