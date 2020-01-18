@@ -27,7 +27,7 @@
             </v-btn>
           </template>
           <v-list>
-            <v-list-item  v-for="(aboutItem, index) in aboutItems" :key="index" :href="'#tabs-' + index+1">
+            <v-list-item  v-for="(aboutItem, index) in aboutItems" :key="index" :href="'#tabs-' + index">
               <v-list-item-title>{{ aboutItem }}</v-list-item-title>
             </v-list-item>
           </v-list>
@@ -82,7 +82,6 @@
 
         <v-tab class="white--text"> Sponsors </v-tab>
 
-        <v-tab class="white--text"> login </v-tab>
       </v-tabs>
 
       <v-tabs-items v-model="currentTab">
