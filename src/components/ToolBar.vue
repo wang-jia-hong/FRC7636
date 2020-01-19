@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card height="1000">
+    <v-card height="50">
       <v-tabs
         color="success"
         v-model="currentTab"
@@ -8,7 +8,7 @@
         grow
         class="white--text"
       >
-        <v-tab :href="'#'"> Home </v-tab>
+        <v-tab @click="changePath('home')"> Home </v-tab>
         <v-tab>
           <v-menu class="white--text" open-on-hover down offset-y>
             <template v-slot:activator="{ on }">
@@ -33,7 +33,7 @@
             </v-list>
           </v-menu>
         </v-tab>
-        <v-tab class="white--text"> FIRST </v-tab>
+        <v-tab class="white--text" @click="changePath('FIRST')"> FIRST </v-tab>
 
         <v-tab>
           <v-menu open-on-hover down offset-y>
@@ -92,5 +92,10 @@ export default {
       mediaItems: ["Photos", "Videos"],
     }
   },
+  methods: {
+    changePath(path){
+      this.$router.push(path)
+    }
+  }
 }
 </script>
