@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card height="50">
+
       <v-tabs
         color="success"
         v-model="currentTab"
@@ -8,7 +8,7 @@
         grow
         class="white--text"
       >
-        <v-tab @click="changePath('home')"> Home </v-tab>
+        <v-tab @click="changePath('/home')"> Home </v-tab>
         <v-tab>
           <v-menu class="white--text" open-on-hover down offset-y>
             <template v-slot:activator="{ on }">
@@ -26,7 +26,7 @@
               <v-list-item
                 v-for="(aboutItem, index) in aboutItems"
                 :key="index"
-                :href="'#tabs-' + index"
+                @click="changePath(`/about/${aboutItem}`)"
               >
                 <v-list-item-title>{{ aboutItem }}</v-list-item-title>
               </v-list-item>
@@ -38,10 +38,10 @@
         <v-tab>
           <v-menu open-on-hover down offset-y>
             <template v-slot:activator="{ on }">
-              <v-btn class="align-self-center mr-4 white--text" text v-on="on">
+              <div class="align-self-center mr-4 white--text" text v-on="on">
                 Robots
-                <v-icon right>mdi-menu-down</v-icon>
-              </v-btn>
+                <v-icon>mdi-menu-down</v-icon>
+              </div>
             </template>
             <v-list>
               <v-list-item
@@ -61,10 +61,10 @@
             offset-y
           >
             <template v-slot:activator="{ on }">
-              <v-btn text class="align-self-center mr-4 white--text" v-on="on">
+              <div text class="align-self-center mr-4 white--text" v-on="on">
                 Media
-                <v-icon right>mdi-menu-down</v-icon>
-              </v-btn>
+                <v-icon>mdi-menu-down</v-icon>
+              </div>
             </template>
             <v-list>
               <v-list-item
@@ -78,7 +78,7 @@
         </v-tab>
         <v-tab class="white--text"> Sponsors </v-tab>
       </v-tabs>
-    </v-card>
+
   </div>
 </template>
 
@@ -93,8 +93,8 @@ export default {
     }
   },
   methods: {
-    changePath(path){
-      this.$router.push(path)
+    changePath(goToPath){
+      this.$router.replace(goToPath)
     }
   }
 }
