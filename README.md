@@ -1,4 +1,4 @@
-# formal
+# FRC7636_Website
 
 ## Project setup
 ```
