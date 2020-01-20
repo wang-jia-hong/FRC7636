@@ -3,10 +3,10 @@
       <v-card color="#002a5c">
         <v-row>
           <v-col cols="3">
-            <img src="../assets/Logo7636.jpg" height="200">            
+            <img class="pl-3" src="../assets/Logo7636.jpg" height="170">            
           </v-col>
           <v-col>
-            <div class="display-2 mt-10 mb-9"> FRC #7636 Robomania</div>          
+            <div class="display-2 mt-10 mb-8"> <strong> FRC #7636 Robomania </strong></div>          
             <Toolbar class="mr-2"></Toolbar>
           </v-col>
         </v-row>
