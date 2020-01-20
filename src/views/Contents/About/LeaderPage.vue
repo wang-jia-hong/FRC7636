@@ -1,5 +1,5 @@
 <template>
-    
+    <div>Leader Page</div>
 </template>
 
 <script>

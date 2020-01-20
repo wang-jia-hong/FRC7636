@@ -1,5 +1,5 @@
 <template>
-    <div>this is about us page</div>
+    <div>cad</div>
 </template>
 
 <script>

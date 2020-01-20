@@ -1,14 +1,13 @@
 <template>
   <div>
-
       <v-tabs
-        color="success"
         v-model="currentTab"
-        background-color="#222222"
+        background-color="#002a5c"
         grow
         class="white--text"
       >
-        <v-tab @click="changePath('/home')"> Home </v-tab>
+        <v-tab class="white--text" @click="changePath('/home')"> Home </v-tab>
+
         <v-tab>
           <v-menu class="white--text" open-on-hover down offset-y>
             <template v-slot:activator="{ on }">
@@ -33,26 +32,27 @@
             </v-list>
           </v-menu>
         </v-tab>
-        <v-tab class="white--text" @click="changePath('FIRST')"> FIRST </v-tab>
 
         <v-tab>
           <v-menu open-on-hover down offset-y>
             <template v-slot:activator="{ on }">
               <div class="align-self-center mr-4 white--text" text v-on="on">
-                Robots
+                Events
                 <v-icon>mdi-menu-down</v-icon>
               </div>
             </template>
             <v-list>
               <v-list-item
-                v-for="(robotItem, index) in robotItems"
+                v-for="(eventItem, index) in eventItems"
                 :key="index"
+                @click="changePath(`/event/${eventItem}`)"
               >
-                <v-list-item-title>{{ robotItem }}</v-list-item-title>
+                <v-list-item-title>{{ eventItem }}</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
         </v-tab>
+        
         <v-tab>
           <v-menu
             class="align-self-center mr-4 white--text"
@@ -62,34 +62,35 @@
           >
             <template v-slot:activator="{ on }">
               <div text class="align-self-center mr-4 white--text" v-on="on">
-                Media
+                Resources
                 <v-icon>mdi-menu-down</v-icon>
               </div>
             </template>
             <v-list>
               <v-list-item
-                v-for="(mediaItem, index) in mediaItems"
+                v-for="(resourceItem, index) in resourceItems"
                 :key="index"
+                @click="changePath(`/resource/${resourceItem}`)"
               >
-                <v-list-item-title>{{ mediaItem }}</v-list-item-title>
+                <v-list-item-title>{{ resourceItem }}</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
         </v-tab>
-        <v-tab class="white--text"> Sponsors </v-tab>
+        <v-tab class="white--text" @click="changePath('/sponsor')"> Sponsors </v-tab>
       </v-tabs>
-
   </div>
 </template>
 
 <script>
 export default {
+  name: 'toolbar',
   data () {
     return {
       currentTab: null,
-      aboutItems: ["About us", "History", "Calender", "Contact Us"],
-      robotItems: ["HandBook", "CAD","Code"],
-      mediaItems: ["Photos", "Videos"],
+      aboutItems: ["FIRST", "#7636", "Team History", "Contact", "Leader", "Mentor"],
+      eventItems: ["News", "Past seasons"],
+      resourceItems: ["Documents", "CADs", "Videos"],
     }
   },
   methods: {

@@ -1,43 +1,80 @@
+四季紅, [19.01.20 17:17]
 <template>
-  <v-footer
-    dark
-    padless
-  >
-    <v-card
-      flat
-      tile
-      color="#02295c"
-      class="col-12 white--text text-center"
-    >
-      <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 white--text"
-          icon
-        >
+  <v-footer dark padless>
+    <v-row>
+      <v-col class="text-center my-auto" v-for="(item, index) in items" :key="index">
+        <h2>{{ item.title }}</h2>
+        <hr class="mx-auto mb-5" width="150">
+        <h3 v-for="link in item.links" :key="link">
+          <router-link class="no-underline white--text" :to="link.path">
+            {{ link.name }}
+          </router-link>
+        </h3>
+      </v-col>
+      <v-col class="text-center my-auto">
+        <h2>Contact Us</h2>
+        <v-btn v-for="icon in icons" :key="icon" class="white-text" icon>
           <v-icon size="24px">{{ icon }}</v-icon>
         </v-btn>
-      </v-card-text>
-
-      <v-card-text class="white--text pt-0 ">
-        Text Right Here
-      </v-card-text>
-
-      <v-divider></v-divider>
-    </v-card>
+      </v-col>
+      <v-col>
+        <v-img src="../assets/FIRST_logo.png" class="ma-3" width="130"></v-img>
+      </v-col>
+    </v-row>
   </v-footer>
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-youtube',
-        'mdi-instagram',
-        'mdi-email'
-      ],
-    }),
-  }
+export default {
+  data: () => ({
+    icons: ["mdi-facebook", "mdi-youtube", "mdi-instagram", "mdi-email"],
+    items: [
+      {
+        title: "About",
+        links: [
+          {
+            name: "FIRST",
+            path: "/First"
+          },
+          {
+            name: "Team #7636",
+            path: "/Team"
+          }
+        ]
+      },
+      {
+        title: "SPONSORS",
+        links: [
+          {
+            name: "Our Sponsors",
+            path: "Community"
+          },
+          {
+            name: "Community",
+            path: ""
+          }
+        ]
+      },
+      {
+        title: "MEMBERS",
+        links: [
+          {
+            name: "Mentors",
+            path: ""
+          },
+          {
+            name: "Leaders",
+            path: ""
+          }
+        ]
+      }
+    ]
+  })
+};
 </script>
+
+<style>
+.no-underline {
+  text-decoration: none;
+}
+</style>

@@ -5,7 +5,7 @@
         color="#A1A29E"
         height="500">
             <v-card color="#767774" height="420">
-                Sponsors page
+                FIRST
             </v-card>
         </v-card>
     </div>
