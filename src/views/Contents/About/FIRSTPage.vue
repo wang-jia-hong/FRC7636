@@ -1,5 +1,10 @@
 <template>
     <div>
+        <v-img
+        aspect-ratio="2"
+        src="../../../assets/FrontIMG/FrontIMGTest3.jpg"
+        >
+        </v-img>
         <v-card 
         class="pa-10"
         color="#A1A29E"

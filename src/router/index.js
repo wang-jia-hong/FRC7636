@@ -12,6 +12,7 @@ import Mentor from '../views/Contents/About/Mentor.vue'
 
 import News from '../views/Contents/Event/News.vue'
 import Past from '../views/Contents/Event/PastSeason.vue'
+import DeepSpace from '../views/Contents/Event/Past season/2019DeepSpace.vue'
 
 import CAD from '../views/Contents/Resources/CADPage.vue'
 import Document from '../views/Contents/Resources/Documents.vue'
@@ -61,7 +62,13 @@ const routes = [
   },
   {
     path: '/past-seasons',
-    component: Past
+    component: Past,
+    children:[
+      {
+        path: '/2019DeepSpace',
+        component: DeepSpace
+      }
+    ]
   },
   {
     path: '/News',
