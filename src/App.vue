@@ -1,12 +1,12 @@
 <template>
-  <v-app>
+<v-app>
     <v-container class=" d-flex flex-column justify-center">
         <Header></Header>
         <Frontimg></Frontimg>
         <router-view></router-view>
         <Footer></Footer>
     </v-container>
-  </v-app>
+  </v-app> 
 </template>
 
 <script>
@@ -20,9 +20,11 @@ export default {
       Footer,
       Frontimg,
   },
-
-  data: () => ({
-    //
-  }),
 };
-</script>
+</script>    
+
+<style>
+* {
+  font-family: "微軟正黑體"!important;
+}
+</style>

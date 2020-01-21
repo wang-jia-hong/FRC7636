@@ -25,7 +25,7 @@
               <v-list-item
                 v-for="(aboutItem, index) in aboutItems"
                 :key="index"
-                @click="changePath(`/about/${aboutItem}`)"
+                @click="changePath(`/${aboutItem}`)"
               >
                 <v-list-item-title>{{ aboutItem }}</v-list-item-title>
               </v-list-item>
@@ -45,7 +45,7 @@
               <v-list-item
                 v-for="(eventItem, index) in eventItems"
                 :key="index"
-                @click="changePath(`/event/${eventItem}`)"
+                @click="changePath(`/${eventItem}`)"
               >
                 <v-list-item-title>{{ eventItem }}</v-list-item-title>
               </v-list-item>
@@ -70,7 +70,7 @@
               <v-list-item
                 v-for="(resourceItem, index) in resourceItems"
                 :key="index"
-                @click="changePath(`/resource/${resourceItem}`)"
+                @click="changePath(`/${resourceItem}`)"
               >
                 <v-list-item-title>{{ resourceItem }}</v-list-item-title>
               </v-list-item>
@@ -88,14 +88,18 @@ export default {
   data () {
     return {
       currentTab: null,
-      aboutItems: ["FIRST", "#7636", "Team History", "Contact", "Leader", "Mentor"],
-      eventItems: ["News", "Past seasons"],
+      aboutItems: ["FIRST", "Team 7636", "Team History", "Contact", "Leader", "Mentor"],
+      eventItems: ["news", "past-seasons"],
       resourceItems: ["Documents", "CADs", "Videos"],
     }
   },
   methods: {
     changePath(goToPath){
-      this.$router.replace(goToPath)
+      this.$router.push(goToPath).catch((error) => {
+        if (error.name != "NavigationDuplicated") {
+          throw error;
+        }
+      });
     }
   }
 }

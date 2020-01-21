@@ -2,11 +2,13 @@
   <div>
       <v-card color="#002a5c">
         <v-row>
-          <v-col cols="3">
-            <img class="pl-3" src="../assets/Logo7636.jpg" height="170">            
+          <v-col lg="3" md="3" sm="12" class="text-center">
+            <img class="" src="../assets/Logo7636.jpg" height="170">            
           </v-col>
           <v-col>
-            <div class="display-2 mt-10 mb-8"> <strong> FRC #7636 Robomania </strong></div>          
+            <div class="display-2 text-center mt-10 mb-8">
+              <strong>FRC #7636 Robomania</strong>
+            </div>          
             <Toolbar class="mr-2"></Toolbar>
           </v-col>
         </v-row>

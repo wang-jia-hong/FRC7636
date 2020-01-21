@@ -32,74 +32,55 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    children: [
-      {
-        path: '/FIRST',
-        name: 'FIRST',
-        component: FIRST
-      },
-      {
-        path: '/Team History',
-        name: 'history',
-        component: History
-      },
-      {
-        path: '/#7636',
-        name: 'Team',
-        component: Team
-      },
-      {
-        path: '/Contact',
-        name: 'contact',
-        component: Contact
-      },
-      {
-        path: '/Leader',
-        name: 'Leader',
-        component:Leader
-      },
-      {
-        path: '/Mentor',
-        name: 'Mentor',
-        component: Mentor
-      },
-    ]
+    path: '/FIRST',
+    component: FIRST
   },
   {
-    path: '/event',
-    children: [
-      {
-        path: '/News',
-        name: 'news',
-        component: News
-      },
-      {
-        path: '/Past seasons',
-        name: 'past',
-        component: Past
-      },
-    ]
+    path: '/Team History',
+    component: History
   },
   {
-    path: '/resource',
-    children: [
-      {
-        path: '/Documents',
-        name: 'document',
-        component: Document
-      },
-      {
-        path: '/CADs',
-        name: 'CAD',
-        component: CAD
-      },
-      {
-        path: '/Videos',
-        name: 'video',
-        component: Video
-      },
-    ]
+    path: '/Team 7636',
+    component: Team
+  },
+  {
+    path: '/Contact',
+    component: Contact
+  },
+  {
+    path: '/Leader',
+    component:Leader
+  },
+  {
+    path: '/Mentor',
+    component: Mentor
+  },
+  {
+    path: '/news',
+    component: News
+  },
+  {
+    path: '/past-seasons',
+    component: Past
+  },
+  {
+    path: '/News',
+    component: News
+  },
+  {
+    path: '/Documents',
+    name: 'document',
+    component: Document
+  },
+  {
+    path: '/CADs',
+    name: 'CAD',
+    component: CAD
+  },
+  {
+    path: '/Videos',
+    name: 'video',
+    component: Video
   },
   {
     path: '/sponsor',

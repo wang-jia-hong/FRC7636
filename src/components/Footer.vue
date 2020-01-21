@@ -34,11 +34,11 @@ export default {
         links: [
           {
             name: "FIRST",
-            path: "/First"
+            path: "/FIRST"
           },
           {
             name: "Team #7636",
-            path: "/Team"
+            path: "/#7636"
           }
         ]
       },
@@ -47,7 +47,7 @@ export default {
         links: [
           {
             name: "Our Sponsors",
-            path: "Community"
+            path: "/sponsor"
           },
           {
             name: "Community",
@@ -60,11 +60,11 @@ export default {
         links: [
           {
             name: "Mentors",
-            path: ""
+            path: "/Mentor"
           },
           {
             name: "Leaders",
-            path: ""
+            path: "/Leader"
           }
         ]
       }
