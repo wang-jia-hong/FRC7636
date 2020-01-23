@@ -8,12 +8,11 @@
         <v-card 
         class="pa-10 align-content-space-around flex-wrap d-flex justify-center"
         color="#A1A29E"
-        height="1000">
-            <v-card color="#767774" height="220" class="d-flex align-center">
-
+        height="1400">
+            <v-card color="#8f8f8f" height="220" class=" d-flex align-center">
                 <v-row>
                     <v-col lg="3" md="3" sm="12" class="text-center">
-                        <img src="../../assets/Elements/Home/Home-CTSP.png" width="100">
+                        <img src="../../assets/Elements/Home/Home-CTSP.png" width="140">
                     </v-col>                    
                     <v-col>
                         <h1>NEHS @ CTSP</h1>
@@ -22,38 +21,63 @@
                 </v-row>
 
             </v-card>
-            <v-card color="#767774" height="420" class=" d-flex flex-column align-center">
+            <v-card color="#767774" height="650" class=" d-flex flex-column align-center">
 
                 <v-row>
                     <v-col>
-                        <h1>NEHS @ CTSP</h1>
+                        <h1>About US</h1>
                         <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</div>
                     </v-col>
                     <v-col lg="3" md="3" sm="12" class="text-center">
-                        <img src="../../assets/Elements/Home/Home-CTSP.png" width="100">
+                        <img src="../../assets/Elements/Home/Home-CTSP.png" width="140">
                     </v-col>                     
                 </v-row>
-
+                <hr color="#8f8f8f" class="mx-auto mb-5" width="450">
                 <v-row>
                     <v-col lg="3" md="3" sm="12" class="text-center">
-                        <img src="../../assets/Elements/Home/Home-CTSP.png" width="100">
+                        <img src="../../assets/Elements/Home/Home-CTSP.png" width="140">
                     </v-col>                    
                     <v-col>
-                        <h1>NEHS @ CTSP</h1>
+                        <h1 class="text-right">FRC 2019</h1>
                         <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</div>
                     </v-col>
                 </v-row>
-
+                <hr color="#8f8f8f" class="mx-auto mb-5" width="450">
                 <v-row>
                     <v-col>
-                        <h1>NEHS @ CTSP</h1>
+                        <h1>Outreach</h1>
                         <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</div>
                     </v-col>
                     <v-col lg="3" md="3" sm="12" class="text-center">
-                        <img src="../../assets/Elements/Home/Home-CTSP.png" width="100">
+                        <img src="../../assets/Elements/Home/Home-CTSP.png" width="140">
                     </v-col>                     
                 </v-row>
             </v-card>
+            <div>
+                <hr color="#000" class="mx-auto mb-5" width="450">
+                <div color="#a1a29e" class="pa-10 align-content-space-around flex-wrap d-flex justify-center">
+                    <v-row>
+                        <v-col cols="3">
+                                <img src="../../assets/Logo7636.jpg" width="200">
+                                <div class="text-center">FRC2019:Deep Space</div>
+                        </v-col>
+                        <v-col cols="3">
+                                <img src="../../assets/Logo7636.jpg" width="200">
+                                <div class="text-center">2019"Charlle's Comet"</div>
+                        </v-col>
+                        <v-col cols="3">
+                                <img src="../../assets/Logo7636.jpg" width="200">
+                                <div class="text-center">About FRC #7636</div>
+                        </v-col>
+                        <v-col cols="3">
+                                <img src="../../assets/Logo7636.jpg" width="200">
+                                <div class="text-center">Coming up ~~~</div>
+                        </v-col>                    
+                    </v-row>
+                </div>
+                <hr color="#000" class="mx-auto mb-5" width="450">                
+            </div>
+
         </v-card>
     </div>
 </template>
