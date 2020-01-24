@@ -1,6 +1,6 @@
 <template>
     <div>
-        <iframe class=" text-center" width="1160" height="500" src="https://www.youtube.com/embed/Mew6G_og-PI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class=" text-center" width="1160" height="500" src="https://www.youtube.com/embed/gmiYWTmFRVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <v-card 
         class="pa-10"
         color="#A1A29E"

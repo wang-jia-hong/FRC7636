@@ -4,7 +4,11 @@
         aspect-ratio="2"
         src="../../assets/FrontIMG/FrontIMGTest.jpg"
         >
+            <div class="display-2 text-left">
+                FRC ＃７６３６ <br> Robomania            
+            </div>
         </v-img>
+        
         <v-card 
         class="pa-10 align-content-space-around flex-wrap d-flex justify-center"
         color="#A1A29E"
@@ -49,7 +53,7 @@
                         <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</div>
                     </v-col>
                     <v-col lg="3" md="3" sm="12" class="text-center">
-                        <img src="../../assets/Elements/Home/Home-CTSP.png" width="140">
+                        <img src="HomePage/Logo7636.jpg" justify-lg-space-around width="140">
                     </v-col>                     
                 </v-row>
             </v-card>
@@ -57,22 +61,14 @@
                 <hr color="#000" class="mx-auto mb-5" width="450">
                 <div color="#a1a29e" class="pa-10 align-content-space-around flex-wrap d-flex justify-center">
                     <v-row>
-                        <v-col cols="3">
-                                <img src="../../assets/Logo7636.jpg" width="200">
-                                <div class="text-center">FRC2019:Deep Space</div>
-                        </v-col>
-                        <v-col cols="3">
-                                <img src="../../assets/Logo7636.jpg" width="200">
-                                <div class="text-center">2019"Charlle's Comet"</div>
-                        </v-col>
-                        <v-col cols="3">
-                                <img src="../../assets/Logo7636.jpg" width="200">
-                                <div class="text-center">About FRC #7636</div>
-                        </v-col>
-                        <v-col cols="3">
-                                <img src="../../assets/Logo7636.jpg" width="200">
-                                <div class="text-center">Coming up ~~~</div>
-                        </v-col>                    
+                        <v-col
+                         cols="3"
+                         v-for="(bottomItem, index) in bottomItems"
+                         :key="index"
+                        >
+                                <img :src="bottomItem.photo" width="220">
+                                <div class="text-center"> {{bottomItem.text}} </div>
+                        </v-col>                  
                     </v-row>
                 </div>
                 <hr color="#000" class="mx-auto mb-5" width="450">                
@@ -84,6 +80,25 @@
 
 <script>
 export default {
-    
+    data: ()=> ({
+        bottomItems: [
+            {
+                photo: "HomePage/Logo7636.jpg",
+                text: "FRC2019:Deep Space",
+            },
+            {
+                photo: "HomePage/Logo7636.jpg",
+                text: "2019 Charlle's Comet",
+            },
+            {
+                photo: "HomePage/Logo7636.jpg",
+                text: "About FRC #7636",
+            },
+            {
+                photo: "HomePage/Logo7636.jpg",
+                text: "Coming up ~~~",
+            }                                    
+        ]
+    })
 }
 </script>
