@@ -36,7 +36,7 @@
         <v-tab>
           <v-menu open-on-hover down offset-y>
             <template v-slot:activator="{ on }">
-              <div class="align-self-center mr-4 white--text" text v-on="on">
+              <div class="align-self-center white--text" text v-on="on">
                 Events
                 <v-icon>mdi-menu-down</v-icon>
               </div>
