@@ -2,10 +2,10 @@
   <v-footer dark padless>
     <v-row>
 
-      <v-col class="text-center my-auto" v-for="(item, index) in items" :key="index">
+      <v-col class="text-center my-auto" v-for="(item, index) in items" :key="`footer-${index}`">
         <h2>{{ item.title }}</h2>
         <hr class="mx-auto mb-5" width="150">
-        <h3 v-for="link in item.links" :key="link">
+        <h3 v-for="(link, index) in item.links" :key="`link-${index}`">
           <router-link class="no-underline white--text" :to="link.path">
             {{ link.name }}
           </router-link>
@@ -14,7 +14,7 @@
 
       <v-col class="text-center my-auto">
         <h2>Contact Us</h2>
-        <v-btn v-for="icon in icons" :key="icon" class="white-text" :href="icon.path" target="_blank" icon>
+        <v-btn v-for="(icon, index) in icons" :key="`icon-${index}`" class="white-text" :href="icon.path" target="_blank" icon>
           <v-icon size="24px">{{ icon.title }}</v-icon>
         </v-btn>
       </v-col>

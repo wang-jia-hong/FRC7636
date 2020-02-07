@@ -1,4 +1,4 @@
-<template>
+<!--<template>
     <div>
         <v-img
         aspect-ratio="2"
@@ -46,4 +46,4 @@ export default {
     }
   }
 }
-</script>
+</script>-->
