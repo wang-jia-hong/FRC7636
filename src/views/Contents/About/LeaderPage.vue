@@ -1,26 +1,30 @@
 <template>
-    <div>
-        <v-card 
-        class="pa-10 align-content-space-around d-flex flex-wrap justify-center"
-        color="#A1A29E"
-        height="1500">
-            <v-card color="#767774" height="1000" width="1000" class="d-flex flex-column align-center">
-                <v-row class="align-center">
-                    <h1 class="display-2">Student Team Leaders</h1>
-                </v-row>           
-                <v-row class="d-flex align-center justify-center ml-12">
+        <div class="pa-10" style="background-color: #A1A29E">
+            <div style="background-color: #767774" class="mx-auto">
+                <h1 class="display-2 text-center py-5">Student Team Leaders</h1>
+                <v-row no-gutters>
                     <v-col 
-                     lg="6" md="6" sm="12"
+                     lg="6"
+                     md="6"
+                     sm="12"
                      v-for="(leaderInfomation, index) in leaderInfomations"
-                     :key="index">
-                        <h3>{{leaderInfomation.title}}</h3>
-                        <div>{{leaderInfomation.name}}</div>
-                        <div>{{leaderInfomation.email}}</div>                     
+                     :key="index"
+                     class="text-center my-8"
+                    >
+                        <h3>
+                            {{ leaderInfomation.title }}
+                        </h3>
+                        <hr style="width: 60%" class="mx-auto mb-2">
+                        <div>
+                            {{ leaderInfomation.name }}
+                        </div>
+                        <div>
+                            {{ leaderInfomation.email }}
+                        </div>                  
                     </v-col>
                 </v-row>
-            </v-card>
-        </v-card>
-    </div>
+            </div>
+        </div>
 </template>
 
 <script>
