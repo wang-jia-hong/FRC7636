@@ -16,7 +16,7 @@
                     </v-col>                   
                     <v-col>
                         <h1>FRC 2020: Infinite Recharge</h1>
-                        <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</div>
+                        <div>Powered by the great sponsorer, STAR WARS, our mission this year is to protect the FIRST city from being attacked. We use limited resources to built our second robot. We aim to strike both Science Park Taiwan Regional and Silicon Valley Regional and go to our final goal, Detroit Championship. We are confidential that we will do a lot better this season.</div>
                     </v-col>
                 </v-row>
                 <hr color="#000" class="mx-auto mb-5" width="450">
@@ -26,7 +26,7 @@
                     </v-col>                   
                     <v-col>
                         <h1>FRC 2019: Deep Space</h1>
-                        <div>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</div>
+                        <div>Sponsored by the aircraft mega company, BOEING, and with the view to explore the unknown space in the future, our theme this year, Deep Space, is looking forward to load and transport the resources to our space craft. Our robot and strategy had changed through the season, and our first robot, Charlie’s Comet had done a great job .</div>
                     </v-col>
                 </v-row>
             </v-card>
