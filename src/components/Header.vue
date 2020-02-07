@@ -8,8 +8,8 @@
           <v-col>
             <div class="display-2 text-center mt-10 mb-8">
               <strong>FRC #7636 Robomania</strong>
-            </div>          
-            <Toolbar class="mr-2"></Toolbar>
+            </div>
+            <Toolbar></Toolbar>
           </v-col>
         </v-row>
       </v-card>
