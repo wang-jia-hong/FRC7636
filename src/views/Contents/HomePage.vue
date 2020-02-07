@@ -62,10 +62,10 @@
                             <div class="text-center">
                                 {{ bottomItem.text }}
                             </div>
-                        </v-col>                  
+                        </v-col>
                     </v-row>
                 </div>
-                <hr color="#8f8f8f" class="mx-auto mb-5" style="width: 85%">                
+                <hr color="#8f8f8f" class="mx-auto mb-5" style="width: 85%">
             </div>
         </div>
     </div>
