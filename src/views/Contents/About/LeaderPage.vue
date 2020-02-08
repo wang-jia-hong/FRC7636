@@ -1,20 +1,21 @@
 <template>
-        <div class="pa-10" style="background-color: #A1A29E">
+        <div class="pa-5" style="background-color: #A1A29E">
             <div style="background-color: #767774" class="mx-auto">
                 <h1 class="display-2 text-center py-5">Student Team Leaders</h1>
                 <v-row no-gutters>
                     <v-col 
-                     lg="6"
-                     md="6"
-                     sm="12"
-                     v-for="(leaderInfomation, index) in leaderInfomations"
-                     :key="index"
-                     class="text-center my-8"
+                        cols="12"
+                        lg="6"
+                        xl="4"
+                        v-for="(leaderInfomation, index) in leaderInfomations"
+                        :key="index"
+                        class="text-center my-8"
+                        style="font-size: 1.1em;"
                     >
-                        <h3>
+                        <h3 style="display: inline-block">
                             {{ leaderInfomation.title }}
+                            <hr style="width: 100%" class="mx-auto mb-2">
                         </h3>
-                        <hr style="width: 60%" class="mx-auto mb-2">
                         <div>
                             {{ leaderInfomation.name }}
                         </div>
