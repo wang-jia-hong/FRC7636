@@ -50,7 +50,7 @@
             </div>
 
             <div>
-                <div color="#a1a29e" class="px-10 text-center">
+                <div style="color: black; font-size: 1.1em;" class="px-10 text-center">
                     <v-row>
                         <v-col
                             cols="12"
@@ -59,8 +59,9 @@
                             v-for="(bottomItem, index) in bottomItems"
                             :key="index"
                         >
-                            <img :src="bottomItem.photo" width="200">
+                            
                             <div class="text-center">
+                                <img :src="bottomItem.photo" style="width: 90%;">
                                 {{ bottomItem.text }}
                             </div>
                         </v-col>
