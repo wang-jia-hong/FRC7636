@@ -96,22 +96,22 @@ export default {
         cardItems: [
             {
                 title: "NEHS @ CTSP",
-                content: "FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Twiwan Science Park.",
+                content: "FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Taiwan Science Park.",
                 imgPath: "Elements/Home/Home-CTSP.png"
             },
             {
                 title: "About Us",
-                content: "We're Robomania from Taiwan. Our team is a group of students who are passionate about robots and spare no effort to pursueour dreams. Year 2019 is our Rookie year in the field of FIRST, and we've gained a lot through the season. We are looking forward to improve in 2020 and share what we have to the society.",
+                content: "We’re Robomania from Taiwan. Our team is a group of students who are passionate about robots and spare no effort to pursue our dreams. Year 2019 is our Rookie year in the field of FIRST, and we’ve gained a lot through the season. We are looking forward to improve in 2020 and share what we have to the society.",
                 imgPath: "Elements/Home/Home-CTSP.png"
             },
             {
                 title: "FRC 2019",
-                content: "We've been participating in the Southern Cross Regional Competition located in NSW of Australia in our rookie year, 2019. We've gained a lot through the pass season. Our robot, Charlie's Comet, had been upgraded and imporved through the CTSP Pre-competition and the CTSP off season competition.",
+                content: "We’ve been participating in the Southern Cross Regional Competition located in NSW of Australia in our rookie year, 2019. We’ve gained a lot through the pass season. Our robot, Charlie’s Comet, had been upgraded and improved through the CTSP Pre-competition and the CTSP off season competition.",
                 imgPath: "Elements/Home/Home-CTSP.png"
             },
             {
                 title: "Outreach",
-                content: "Outreach program is one of the most Important task that we do. It is very popular to use technology devices nowadays and it is very easy to reach education resources. We want to develop something different according to the different stories we've experienced. We offer camps to public and we also demonstrate the spriit and our team while science fair and some festivals.",
+                content: "Outreach program is one of the most important task that we do. It is very popular to use technology devices nowadays and it is very easy to reach education resources. We want to develop something defferent according to the different stories we’ve experienced. We offer camps to public and we also demonstrate the spirit and our team while science fair and some festivals.",
                 imgPath: "Elements/Home/Home-CTSP.png"
             },
         ]
