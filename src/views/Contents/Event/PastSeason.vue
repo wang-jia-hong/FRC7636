@@ -1,8 +1,8 @@
-<template>
+<!--<template>
     <div>
         <v-img
         aspect-ratio="2"
-        src=""
+        src="../../../assets/Elements/Events/Events-Past seasons.jpeg"
         >
         </v-img>
          <v-card 
@@ -12,7 +12,7 @@
             <v-card color="#8f8f8f" height="600" class=" d-flex flex-column align-center">
                 <v-row @click="changePath('/past-seasons/2019DeepSpace')">
                     <v-col lg="3" md="3" sm="12" class="text-center">
-                        <img height="250" src="" :ripple="true">
+                        <img height="250" src="../../../assets/Elements/Everywhere-2020 Infinite Recharge.png" :ripple="true">
                     </v-col>                   
                     <v-col>
                         <h1>FRC 2020: Infinite Recharge</h1>
@@ -22,7 +22,7 @@
                 <hr color="#000" class="mx-auto mb-5" width="450">
                 <v-row @click="changePath('/past-seasons/2019DeepSpace')">
                     <v-col lg="3" md="3" sm="12" class="text-center">
-                        <img height="250" src="">
+                        <img height="250" src="../../../assets/Elements/Everywhere-2019 Deep Space.png">
                     </v-col>                   
                     <v-col>
                         <h1>FRC 2019: Deep Space</h1>
@@ -46,4 +46,4 @@ export default {
     }
   }
 }
-</script>
+</script>-->
