@@ -2,7 +2,7 @@
     <div>
         <v-img
         aspect-ratio="2"
-        src="../../assets/FrontIMG/FrontIMGTest2.jpg"
+        src=""
         >
         </v-img>
         <v-card 
