@@ -2,7 +2,7 @@
     <div>
         <v-img
             aspect-ratio="2"
-            src="@/assets/FrontIMG/FrontIMGTest.jpg"
+            src=""
             class="d-flex align-end"
         >
             <h1 class="ml-3 mb-2">
@@ -61,7 +61,7 @@
                         >
                             
                             <div class="text-center">
-                                <img :src="bottomItem.photo" style="width: 90%;">
+                                <img :src="require(bottomItem.photo)" style="width: 90%;">
                                 {{ bottomItem.text }}
                             </div>
                         </v-col>
@@ -78,19 +78,19 @@ export default {
     data: ()=> ({
         bottomItems: [
             {
-                photo: "HomePage/Logo7636.jpg",
+                photo: "",
                 text: "FRC2019:Deep Space",
             },
             {
-                photo: "HomePage/Logo7636.jpg",
+                photo: "",
                 text: "2019 Charlle's Comet",
             },
             {
-                photo: "HomePage/Logo7636.jpg",
+                photo: "",
                 text: "About FRC #7636",
             },
             {
-                photo: "HomePage/Logo7636.jpg",
+                photo: "",
                 text: "Coming up ~~~",
             }
         ],
@@ -98,22 +98,22 @@ export default {
             {
                 title: "NEHS @ CTSP",
                 content: "FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Taiwan Science Park.",
-                imgPath: "Elements/Home/Home-CTSP.png"
+                imgPath: ""
             },
             {
                 title: "About Us",
                 content: "We’re Robomania from Taiwan. Our team is a group of students who are passionate about robots and spare no effort to pursue our dreams. Year 2019 is our Rookie year in the field of FIRST, and we’ve gained a lot through the season. We are looking forward to improve in 2020 and share what we have to the society.",
-                imgPath: "Elements/Home/Home-CTSP.png"
+                imgPath: ""
             },
             {
                 title: "FRC 2019",
                 content: "We’ve been participating in the Southern Cross Regional Competition located in NSW of Australia in our rookie year, 2019. We’ve gained a lot through the pass season. Our robot, Charlie’s Comet, had been upgraded and improved through the CTSP Pre-competition and the CTSP off season competition.",
-                imgPath: "Elements/Home/Home-CTSP.png"
+                imgPath: ""
             },
             {
                 title: "Outreach",
                 content: "Outreach program is one of the most important task that we do. It is very popular to use technology devices nowadays and it is very easy to reach education resources. We want to develop something defferent according to the different stories we’ve experienced. We offer camps to public and we also demonstrate the spirit and our team while science fair and some festivals.",
-                imgPath: "Elements/Home/Home-CTSP.png"
+                imgPath: ""
             },
         ]
     }),
