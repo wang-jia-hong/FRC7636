@@ -44,6 +44,6 @@ export default {
 </script>
 <style>
     .contentBackground{
-        background-color: "#A1A29E",
+        background-color: #A1A29E;
     }
 </style>
