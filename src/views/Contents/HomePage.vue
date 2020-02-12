@@ -5,7 +5,7 @@
             src=""
             class="d-flex align-end"
         >
-            <h1 class="ml-3 mb-2">
+            <h1 class="ml-3 mb-2">Q〔Q〔Q〔Q〔Q〔Q〔Q〔Q〔Q〔Q〔Q
                 FRC #7636<br />Robomania            
             </h1>
         </v-img>
@@ -78,7 +78,7 @@ export default {
     data: ()=> ({
         bottomItems: [
             {
-                photo: "",
+                photo: "../../assets/Elements/Everywhere-2019 Deep Space.png",
                 text: "FRC2019:Deep Space",
             },
             {
