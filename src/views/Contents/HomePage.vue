@@ -61,7 +61,7 @@
                         >
                             
                             <div class="text-center">
-                                <img :src="require(bottomItem.photo)" style="width: 90%;">
+                                <img :src="bottomItem.photo" style="width: 90%;">
                                 {{ bottomItem.text }}
                             </div>
                         </v-col>
@@ -86,7 +86,7 @@ export default {
                 text: "2019 Charlle's Comet",
             },
             {
-                photo: "@/assets/Logo7636.jpg",
+                photo: require("@/assets/Logo7636.jpg"),
                 text: "About FRC #7636",
             },
             {
