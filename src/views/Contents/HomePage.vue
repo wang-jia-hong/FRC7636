@@ -61,7 +61,7 @@
                         >
                             
                             <div class="text-center">
-                                <img :src="bottomItem.photo" style="width: 90%;">
+                                <img :src="require(bottomItem.photo)" style="width: 90%;">
                                 {{ bottomItem.text }}
                             </div>
                         </v-col>
@@ -78,7 +78,6 @@ export default {
     data: ()=> ({
         bottomItems: [
             {
-
                 photo: require("@/assets/Elements/Everywhere-2019 Deep Space.png"),
                 text: "FRC2019:Deep Space",
             },
@@ -87,7 +86,7 @@ export default {
                 text: "2019 Charlle's Comet",
             },
             {
-                photo: require("@/assets/Logo7636.jpg"),
+                photo: "@/assets/Logo7636.jpg",
                 text: "About FRC #7636",
             },
             {
@@ -99,9 +98,7 @@ export default {
             {
                 title: "NEHS @ CTSP",
                 content: "FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Taiwan Science Park.",
-
                 imgPath: require("@/assets/Elements/Home/Home-CTSP.png"),
-
             },
             {
                 title: "About Us",
