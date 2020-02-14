@@ -66,11 +66,11 @@ const routes = [
     component: Past
   },
   {
-    path: '/past-seasons/2019DeepSpace',
+    path: '/2019DeepSpace',
     component: DeepSpace
   },
   {
-    path: '/past-seasons/2020InfiniteRecharge',
+    path: '/2020InfiniteRecharge',
     component: InfiniteRecharge
   },
   {
