@@ -1,41 +1,81 @@
-<!--<template>
+
+<template>
     <div>
         <v-img
-        aspect-ratio="2"
-        src="../../../assets/Elements/Events/Events-Past seasons.jpeg"
+            aspect-ratio="2"
+            src="@/assets/Elements/FrontIMG/Events-Past seasons.jpeg"
+            class="d-flex align-end"
         >
+        <h1 class="ml-3 mb-2">
+            FRC<br/> Past Seasons            
+        </h1>
         </v-img>
-         <v-card 
-        class="pa-10 align-content-space-around flex-wrap d-flex justify-center"
-        color="#A1A29E"
-        height="800">
-            <v-card color="#8f8f8f" height="600" class=" d-flex flex-column align-center">
-                <v-row @click="changePath('/past-seasons/2019DeepSpace')">
-                    <v-col lg="3" md="3" sm="12" class="text-center">
-                        <img height="250" src="../../../assets/Elements/Everywhere-2020 Infinite Recharge.png" :ripple="true">
-                    </v-col>                   
-                    <v-col>
-                        <h1>FRC 2020: Infinite Recharge</h1>
-                        <div>Powered by the great sponsorer, STAR WARS, our mission this year is to protect the FIRST city from being attacked. We use limited resources to built our second robot. We aim to strike both Science Park Taiwan Regional and Silicon Valley Regional and go to our final goal, Detroit Championship. We are confidential that we will do a lot better this season.</div>
-                    </v-col>
-                </v-row>
-                <hr color="#000" class="mx-auto mb-5" width="450">
-                <v-row @click="changePath('/past-seasons/2019DeepSpace')">
-                    <v-col lg="3" md="3" sm="12" class="text-center">
-                        <img height="250" src="../../../assets/Elements/Everywhere-2019 Deep Space.png">
-                    </v-col>                   
-                    <v-col>
-                        <h1>FRC 2019: Deep Space</h1>
-                        <div>Sponsored by the aircraft mega company, BOEING, and with the view to explore the unknown space in the future, our theme this year, Deep Space, is looking forward to load and transport the resources to our space craft. Our robot and strategy had changed through the season, and our first robot, Charlie’s Comet had done a great job .</div>
-                    </v-col>
-                </v-row>
-            </v-card>
-        </v-card>
+        
+        <div
+            class="pa-10"
+            style="background-color: #A1A29E"
+        >
+          <div class="outside">
+            <div v-for="(season, index) in seasons" :key="index">
+              <div class="card pa-6 mx-auto" height="220">
+                  <v-row @click="changePath(season.path)">
+                      <v-col
+                          cols="12"
+                          md="4"
+                          class="text-center my-auto"
+                      >
+                          <img :src="season.photo" style="width: 95%">
+                      </v-col>
+                      <v-col order="2">
+                          <div class="mb-2 display-1">
+                              {{ season.title }}
+                          </div>
+                          <div class=" subtitle-1">
+                              {{ season.text }}
+                          </div>
+                      </v-col>
+                  </v-row>
+              </div>
+              <hr v-if="index != 1" color="#000" class="mx-auto my-3" style="max-width: 80%">
+            </div>
+          </div>
+            
+        </div>
     </div>
 </template>
 
 <script>
 export default {
+  data: ()=> ({
+      seasons:[
+        {
+          photo: require("../../../assets/Elements/Everywhere-2020 Infinite Recharge.png"),
+          title: "FRC 2020: Infinite Recharge",
+          text: "Powered by the great sponsorer, STAR WARS, our mission this year is to protect the FIRST city from being attacked. We use limited resources to built our second robot. We aim to strike both Science Park Taiwan Regional and Silicon Valley Regional and go to our final goal, Detroit Championship. We are confidential that we will do a lot better this season.",
+          path: "/2020InfiniteRecharge",
+        },
+        {
+          photo: require("@/assets/Elements/Everywhere-2019 Deep Space.png"),
+          title: "FRC 2019: Deep Space",
+          text: "Sponsored by the aircraft mega company, BOEING, and with the view to explore the unknown space in the future, our theme this year, Deep Space, is looking forward to load and transport the resources to our space craft. Our robot and strategy had changed through the season, and our first robot, Charlie’s Comet had done a great job .",
+          path: "/2020InfiniteRecharge",
+        },
+      ]
+  }),
+  computed: {
+    // eslint-disable-next-line vue/return-in-computed-property
+    imageHeight () {
+      // eslint-disable-next-line no-console
+      console.log(document.body.clientWidth)
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 1
+        case 'sm': return 1
+        case 'md': return 1
+        case 'lg': return 3
+        case 'xl': return 3
+      }
+    },
+  },
   methods: {
     changePath(goToPath){
       this.$router.push(goToPath).catch((error) => {
@@ -46,4 +86,13 @@ export default {
     }
   }
 }
-</script>-->
+</script>
+
+<style>
+.card {
+    width: 95%;
+}
+.outside {
+    background-color: #767774;
+}
+</style>
