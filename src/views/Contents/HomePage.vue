@@ -27,10 +27,10 @@
                         </v-col>
 
                         <v-col order="2">
-                            <div class="mb-2 display-4">
+                            <div class="mb-2 display-1">
                                 {{ cardItem.title }}
                             </div>
-                            <div class="display-1">
+                            <div class="subtitle-1">
                                 {{ cardItem.content }}
                             </div>
                         </v-col>
