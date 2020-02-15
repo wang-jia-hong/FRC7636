@@ -18,13 +18,14 @@
           <div class="inside">
             <div v-for="(season, index) in seasons" :key="index">
               <div class="pa-6 mx-auto" height="220">
-                  <v-row @click="changePath(season.path)">
+                <v-hover v-slot:default="{ hover }">
+                  <v-row @click="changePath(season.path)" :class="`elevation-${hover ? 20 : 0}`">
                       <v-col
                           cols="12"
                           md="4"
                           class="text-center my-auto"
                       >
-                          <img :src="season.photo" style="width: 95%">
+                          <img :src="season.photo" style="width: 80%">
                       </v-col>
                       <v-col order="2">
                           <div class="mb-2 display-1">
@@ -34,7 +35,9 @@
                               {{ season.text }}
                           </div>
                       </v-col>
-                  </v-row>
+                  </v-row>                  
+                </v-hover>
+
               </div>
               <hr v-if="index != 1" color="#3b3b3b" class="mx-auto my-3" style="max-width: 80%">
             </div>
