@@ -12,7 +12,7 @@
         
         <div
             class="pa-10"
-            style="background-color: #A1A29E"
+            style="background-color: #cbcbcb"
         >
             <div v-for="(cardItem, index) in cardItems" :key="index">
                 <div class="card pa-6 mx-auto" height="220">
@@ -136,7 +136,7 @@ export default {
 
 <style>
 .card {
-    background-color: #767774;
+    background-color: #b2b2b2;
     width: 95%;
 }
 .contentSize {

@@ -1,18 +1,58 @@
 <template>
-    <div>
-        <v-card 
-        class="pa-10"
-        color="#A1A29E"
-        height="500">
-            <v-card color="#767774" height="420">
-                Mentor
-            </v-card>
-        </v-card>
-    </div>
+        <div class="pa-10" style="background-color: #cbcbcb">
+            <div style="background-color: #a2a2a2" class="mx-auto">
+                <h1 class="display-2 text-center py-5">Student Team Mentors</h1>
+                <v-row no-gutters>
+                    <v-col 
+                     lg="6"
+                     md="6"
+                     sm="12"
+                     v-for="(leaderInfomation, index) in leaderInfomations"
+                     :key="index"
+                     class="text-center my-8"
+                    >
+                        <h3>
+                            {{ leaderInfomation.title }}
+                        </h3>
+                        <hr style="width: 60%" class="mx-auto mb-2">
+                        <div>
+                            {{ leaderInfomation.name }}
+                        </div>
+                        <div>
+                            {{ leaderInfomation.email }}
+                        </div>                  
+                    </v-col>
+                </v-row>
+            </div>
+        </div>
 </template>
 
 <script>
 export default {
-    
+    data: ()=> ({
+        leaderInfomations: [
+            {
+                title: "",
+                name: "", 
+                email: "",
+            },
+            {
+                title: "",
+                name: "", 
+                email: "",
+            },
+            {
+                title: "",
+                name: "", 
+                email: "",
+            },
+            {
+                title: "",
+                name: "", 
+                email: "",
+            },
+
+        ]
+    })
 }
 </script>

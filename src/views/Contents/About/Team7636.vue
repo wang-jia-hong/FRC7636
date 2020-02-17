@@ -1,11 +1,16 @@
 <template>
     <div>
+        <v-img
+        aspect-ratio="2"
+        src=""
+        >
+        </v-img>
         <v-card 
         class="pa-10"
-        color="#A1A29E"
+        color="#cbcbcb"
         height="500">
-            <v-card color="#767774" height="420">
-                team page
+            <v-card color="#a3a3a3" height="420">
+                Team7636
             </v-card>
         </v-card>
     </div>

@@ -1,6 +1,6 @@
 <template>
-        <div class="pa-10" style="background-color: #A1A29E">
-            <div style="background-color: #767774" class="mx-auto">
+        <div class="pa-10" style="background-color: #cbcbcb">
+            <div style="background-color: #a2a2a2" class="mx-auto">
                 <h1 class="display-2 text-center py-5">Student Team Leaders</h1>
                 <v-row no-gutters>
                     <v-col 
