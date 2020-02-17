@@ -12,19 +12,20 @@
         </v-img>
         
         <div
-            class="pa-10"
-            style="background-color: #A1A29E"
+          class="pa-10"
+          style="background-color: #cbcbcb"
         >
-          <div class="outside">
+          <div class="inside">
             <div v-for="(season, index) in seasons" :key="index">
-              <div class="card pa-6 mx-auto" height="220">
-                  <v-row @click="changePath(season.path)">
+              <div class="pa-6 mx-auto" height="220">
+                <v-hover v-slot:default="{ hover }">
+                  <v-row @click="changePath(season.path)" :class="`elevation-${hover ? 20 : 0}`">
                       <v-col
                           cols="12"
                           md="4"
                           class="text-center my-auto"
                       >
-                          <img :src="season.photo" style="width: 95%">
+                          <img :src="season.photo" style="width: 80%">
                       </v-col>
                       <v-col order="2">
                           <div class="mb-2 display-1">
@@ -34,9 +35,11 @@
                               {{ season.text }}
                           </div>
                       </v-col>
-                  </v-row>
+                  </v-row>                  
+                </v-hover>
+
               </div>
-              <hr v-if="index != 1" color="#000" class="mx-auto my-3" style="max-width: 80%">
+              <hr v-if="index != 1" color="#3b3b3b" class="mx-auto my-3" style="max-width: 80%">
             </div>
           </div>
             
@@ -58,7 +61,7 @@ export default {
           photo: require("@/assets/Elements/Everywhere-2019 Deep Space.png"),
           title: "FRC 2019: Deep Space",
           text: "Sponsored by the aircraft mega company, BOEING, and with the view to explore the unknown space in the future, our theme this year, Deep Space, is looking forward to load and transport the resources to our space craft. Our robot and strategy had changed through the season, and our first robot, Charlie’s Comet had done a great job .",
-          path: "/2020InfiniteRecharge",
+          path: "/2019DeepSpace",
         },
       ]
   }),
@@ -89,10 +92,8 @@ export default {
 </script>
 
 <style>
-.card {
-    width: 95%;
-}
-.outside {
-    background-color: #767774;
+.inside {
+    background-color: #a3a3a3;
+    width: 100%;    
 }
 </style>
