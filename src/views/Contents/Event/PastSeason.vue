@@ -42,7 +42,6 @@
               <hr v-if="index != 1" color="#3b3b3b" class="mx-auto my-3" style="max-width: 80%">
             </div>
           </div>
-            
         </div>
     </div>
 </template>
