@@ -1,6 +1,6 @@
 # FRC7636_Website
 
-發網址： https://frc7636robmania.github.io/FRC7636_Website/Home
+發網址： https://cathy80110017.github.io/FRC7636/
 
 ## Project setup
 ```
