@@ -1,6 +1,7 @@
 # FRC7636_Website
 
-發網址： https://cathy80110017.github.io/FRC7636/
+
+發佈網址： https://cathy80110017.github.io/FRC7636/
 
 ## Project setup
 ```
