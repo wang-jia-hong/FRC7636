@@ -37,8 +37,11 @@ export default {
 </script>    
 
 <style>
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 * {
-  font-family: "微軟正黑體"!important;
+  font-family: "Raleway","fantasy","sans-serif";
 }
 
 @keyframes nyanCat {
