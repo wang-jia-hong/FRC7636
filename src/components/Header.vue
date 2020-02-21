@@ -1,17 +1,24 @@
 <template>
   <div>
+      
       <v-card color="#002a5c">
         <v-row>
-          <v-col lg="3" md="3" sm="12" class="text-center">
-            <img class="" src="../assets/Logo7636.jpg" height="170">            
+          <v-col cols="12" lg="3" md="3" sm="12" class="text-center">
+            <img class="" src="../assets/Logo7636.jpg" height="160">
           </v-col>
-          <v-col>
-            <div class="display-2 text-center mt-10 mb-8">
+          <v-col class="ma-auto">
+            <div cols="12" lg="9" md="9" sm="12" class="display-2 text-center">
               <strong>FRC #7636 Robomania</strong>
-            </div>
-            <Toolbar></Toolbar>
+            </div>           
           </v-col>
         </v-row>
+        <vue-position-sticky :offsetTop="0">
+            <v-col style="background-color: #002a5c">
+              <Toolbar></Toolbar>
+            </v-col>          
+        </vue-position-sticky>
+
+
       </v-card>
   </div>
 </template>

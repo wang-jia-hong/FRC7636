@@ -12,7 +12,7 @@
         
         <div
             class="pa-10"
-            style="background-color: #cbcbcb"
+            style="background-color: #fafafa"
         >
                 <div class="pb-12 pt-6">
                     <div class="pa-6 mx-auto" height="220" style="background-color: #b2b2b2; width: 95%;">
@@ -87,7 +87,7 @@
                         >
                             <v-hover v-slot:default="{ hover }">
                                 <div class="text-center pt-6"  :class="`elevation-${hover ? 16 : 0}`" @click="changePath(bottomItem.path)">
-                                    <img :src="bottomItem.photo" style="width: 90%;">
+                                    <img :src="bottomItem.photo" style="width: 90%;" class="mx-auto"><br>
                                     {{ bottomItem.text }}
                                 </div>                                
                             </v-hover>                                
