@@ -16,26 +16,27 @@
         >
                 <div class="pb-12 pt-6">
                     <div class="pa-6 mx-auto" height="220" style="background-color: #b2b2b2; width: 95%;">
-                        <v-hover v-slot:default="{ hover }">
-                            <v-row :class="`elevation-${hover ? 15 : 0}`">
-                                <v-col
-                                    cols="12"
-                                    md="4"
-                                    class="text-center my-auto"
-                                >
-                                    <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 95%">
-                                </v-col>
-                                <v-col order="2">
-                                    <div class="mb-2 display-1">
-                                        NEHS @ CTSP
-                                    </div>
-                                    <div class="subtitle-1">
-                                        FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Taiwan Science Park.
-                                    </div>
-                                </v-col>
-                            </v-row>                            
-                        </v-hover>
-
+                        <a href="https://www.frctaichungregional.com.tw/"  style="text-decoration:none; color:white;">
+                            <v-hover v-slot:default="{ hover }">
+                                <v-row :class="`elevation-${hover ? 15 : 0}`">
+                                    <v-col
+                                        cols="12"
+                                        md="4"
+                                        class="text-center my-auto"
+                                    >
+                                        <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 55%">
+                                    </v-col>
+                                    <v-col order="2">
+                                        <div class="mb-2 display-1">
+                                            NEHS @ CTSP
+                                        </div>
+                                        <div class="subtitle-1">
+                                            FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Taiwan Science Park.
+                                        </div>
+                                    </v-col>
+                                </v-row>                            
+                            </v-hover>                            
+                        </a>
                     </div>
                 </div>
                 <div style="width:95%; background-color: #a2a2a2;" class="mx-auto pt-8" >
