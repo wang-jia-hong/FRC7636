@@ -31,6 +31,7 @@
                                             NEHS @ CTSP
                                         </div>
                                         <div class="contentSize">
+
                                             FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Taiwan Science Park.
                                         </div>
                                     </v-col>
