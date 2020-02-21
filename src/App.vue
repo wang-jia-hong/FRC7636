@@ -1,10 +1,13 @@
 <template>
 <v-app>
-    <v-container class=" d-flex flex-column justify-center">
+    
+    <v-container fluid class="pa-0 d-flex flex-column justify-center">
         <Header></Header>
         <router-view></router-view>
         <Footer></Footer>
+        <!-- <img src="@/assets/Elements/original.gif" style="position:fixed; width: 20%; top: 10%;animation-name: nyanCat; animation-duration:8s; animation-iteration-count:infinite;"> -->
     </v-container>
+    
   </v-app> 
 </template>
 
@@ -17,6 +20,19 @@ export default {
       Header,
       Footer,
   },
+
+  data: ()=> ({
+    keys: [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
+  }),
+
+  created() {
+    window.addEventListener("keyup", this.listen);
+  },
+  // methods: {
+  //   listen(e){
+  //     const key = e.which || e.keyCode || e.detail;
+  //   }
+  // },
 };
 </script>    
 
@@ -24,4 +40,14 @@ export default {
 * {
   font-family: "微軟正黑體"!important;
 }
+
+@keyframes nyanCat {
+  from{
+    left: -30%;
+  }
+  to{
+    left: 100%;
+  }
+}
+
 </style>
