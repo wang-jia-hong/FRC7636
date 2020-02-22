@@ -5,7 +5,7 @@
             src="@/assets/Elements/FrontIMG/IMG_9038.jpg"
             class="d-flex align-end"
         >
-            <h1 class="ml-6 mb-2"  style="font-style: italic;">
+            <h1 class="ml-8 mb-2"  style="font-style: italic; font-size: 7vmin;">
                 FRC #7636<br />Robomania            
             </h1>
         </v-img>
@@ -175,10 +175,10 @@ export default {
 <style>
 
 .contentSize {
-    font-size: 4vh;
+    font-size: 4vmin;
 }
 .titleSize {
-    font-size: 8vh;
+    font-size: 8vmin;
     font-weight: bold;
 }
 </style>

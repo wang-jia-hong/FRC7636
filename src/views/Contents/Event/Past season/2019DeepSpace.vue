@@ -13,7 +13,7 @@
 
         <div 
          class="pa-10"
-         style="background-color: #cbcbcb"
+         style="background-color: #fafafa"
         >
             <div style="background-color: #a3a3a3">
                 <div class="pa-6 mx-auto" height="220">
@@ -26,10 +26,10 @@
                             <img src="@/assets/Elements/Everywhere-2019 Deep Space.png" style="width: 95%">
                         </v-col>
                         <v-col order="2">
-                            <div class="mb-2 display-1">
+                            <div class="mb-2 titleSize">
                                 FRC 2019: Deep Space
                             </div>
-                            <div class="subtitle-1">
+                            <div class="contentSize">
                                 As for the theme of 2019, we will have to grab and deliver the Hatch Panels and the Cargo and attach or put it onto the rockets and cargo ships. Three teams in the alliance had to leave the three-leveled platform at the beginning, and return at end game time. We have to drive to one of the many cargo ships and rockets to score. What’s special is, we connected the webcam to our driver in which that we can score more points during san storm period.
                             </div>
                         </v-col>
@@ -77,4 +77,11 @@ components: {
 }
 </script>
 <style>
+.contentSize {
+    font-size: 4vmin;
+}
+.titleSize {
+    font-size: 8vmin;
+    font-weight: bold;
+}
 </style>

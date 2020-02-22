@@ -13,7 +13,7 @@
 
         <div 
          class="pa-10"
-         style="background-color: #cbcbcb"
+         style="background-color: #fafafa"
         >
             <div style="background-color: #a3a3a3">
                 <div class="pa-6 mx-auto" height="220">
@@ -26,10 +26,10 @@
                             <img src="@/assets/Elements/Everywhere-2020 Infinite Recharge.png" style="width: 95%">
                         </v-col>
                         <v-col order="2">
-                            <div class="mb-2 display-1">
+                            <div class="mb-2 titleSize ">
                                 FRC 2020: Infinite Recharge
                             </div>
-                            <div class="subtitle-1">
+                            <div class="contentSize">
                                 As for the theme 2020, two alliances work together to go on the games. During Teleop drivers take control of the droids, gaining points by collecting and shooting the Power Cells into the power ports, completing Control Panel to the specifised color or rotations, and hang on the Generator switch to defeat our enemies. To complete the missions, it means that our robot needs not only the technique of accurate-shooting but also the skills of controlling and smooth-moving, this will be a challenge for #7636 in 2020. We are willing to make the perfect robot that can do the best job. FRC#7636, May the force be with all of us.
                             </div>
                         </v-col>
@@ -77,4 +77,11 @@ components: {
 }
 </script>
 <style>
+.contentSize {
+    font-size: 4vmin;
+}
+.titleSize {
+    font-size: 8vmin;
+    font-weight: bold;
+}
 </style>
