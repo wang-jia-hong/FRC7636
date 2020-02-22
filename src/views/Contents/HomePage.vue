@@ -68,7 +68,7 @@
                                         md="4"
                                         class="text-center my-auto"
                                     >
-                                        <img :src="cardItem.imgPath" style="width: 95%">
+                                        <img :src="cardItem.imgPath" style="width: 95%;">
                                     </v-col>                        
                                 </v-row>
                             </div>                            
@@ -108,7 +108,7 @@ export default {
             {
                 title: "About Us",
                 content: "We’re Robomania from Taiwan. Our team is a group of students who are passionate about robots and spare no effort to pursue our dreams. Year 2019 is our Rookie year in the field of FIRST, and we’ve gained a lot through the season. We are looking forward to improve in 2020 and share what we have to the society.",
-                imgPath: "",
+                imgPath: require("@/assets/Elements/Home/UnicornRMBG.png"),
                 path: "/Team 7636",
             },
             {
