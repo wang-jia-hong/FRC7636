@@ -5,7 +5,7 @@
             src="@/assets/Elements/FrontIMG/IMG_9038.jpg"
             class="d-flex align-end"
         >
-            <h1 class="ml-8 mb-2"  style="font-style: italic; font-size: 7vmin;;">
+            <h1 class="ml-8 mb-2"  style="font-style: italic; font-size: 7vmin;">
                 FRC #7636<br />Robomania            
             </h1>
         </v-img>

@@ -1,5 +1,5 @@
 <template>
-        <div class="pa-10" style="background-color: #cbcbcb">
+        <div class="pa-10" style="background-color: #fafafa">
             <div style="background-color: #a2a2a2" class="mx-auto">
                 <h1 class="display-2 text-center py-5">Student Team Leaders</h1>
                 <v-row no-gutters>

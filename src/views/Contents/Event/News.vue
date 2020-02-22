@@ -5,14 +5,14 @@
             src="@/assets/Elements/FrontIMG/IMG_9038.jpg"
             class="d-flex align-end"
         >
-            <h1 class="ml-3 mb-2">
+            <h1 class="ml-3 mb-2" style="font-style: italic; font-size: 7vmin;">
                 News &<br />Upcoming Events            
             </h1>
         </v-img>
         
         <div
             class="pa-10"
-            style="background-color: #cbcbcb"
+            style="background-color: #fafafa"
         >
             <div v-for="(topic, index) in topics" :key="index">
                 <h1 style="font-style: italic;"> {{ topic.name }} </h1>
@@ -85,5 +85,11 @@ export default {
 </script>
 
 <style>
-
+.contentSize {
+    font-size: 4vmin;
+}
+.titleSize {
+    font-size: 8vmin;
+    font-weight: bold;
+}
 </style>

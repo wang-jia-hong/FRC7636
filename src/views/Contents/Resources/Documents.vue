@@ -5,14 +5,11 @@
         src=""
         >
         </v-img>
-        <v-card 
-        class="pa-10"
-        color="#cbcbcb"
-        height="500">
-            <v-card color="#a3a3a3" height="420">
+        <div class="pa-10" style="background-color: #fafafa">
+            <div style="background-color: #a2a2a2" class="mx-auto">
                 Documents
-            </v-card>
-        </v-card>
+            </div>
+        </div>
     </div>
 </template>
 
