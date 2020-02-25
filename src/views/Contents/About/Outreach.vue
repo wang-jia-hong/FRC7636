@@ -7,7 +7,7 @@
         </v-img>
         <div class="pa-10" style="background-color: #fafafa">
             <div style="background-color: #a2a2a2" class="mx-auto">
-                History
+                Outreach
             </div>
         </div>
     </div>
