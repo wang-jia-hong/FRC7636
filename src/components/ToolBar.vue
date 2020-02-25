@@ -77,7 +77,10 @@
             </v-list>
           </v-menu>
         </v-tab>
+
+        <v-tab class="white--text" @click="changePath('/Contact')"> Contacts </v-tab>
         <v-tab class="white--text" @click="changePath('/sponsor')"> Sponsors </v-tab>
+        
       </v-tabs>
   </div>
 </template>
@@ -88,7 +91,7 @@ export default {
   data () {
     return {
       currentTab: null,
-      aboutItems: ["FIRST", "Team 7636", "Team History", "Contact", "Leader", "Mentor"],
+      aboutItems: ["FIRST", "Team 7636", "Outreach", "Leader", "Mentor"],
       eventItems: ["news", "past-seasons"],
       resourceItems: ["Documents", "CADs", "Videos"],
     }

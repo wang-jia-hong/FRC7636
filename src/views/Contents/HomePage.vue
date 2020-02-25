@@ -5,7 +5,7 @@
             src="@/assets/Elements/FrontIMG/IMG_9038.jpg"
             class="d-flex align-end"
         >
-            <h1 class="ml-6 mb-2"  style="font-style: italic;">
+            <h1 class="ml-8 mb-2"  style="font-style: italic; font-size: 7vmin;">
                 FRC #7636<br />Robomania            
             </h1>
         </v-img>
@@ -24,13 +24,14 @@
                                         md="4"
                                         class="text-center my-auto"
                                     >
-                                        <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 95%">
+                                        <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 60%">
                                     </v-col>
                                     <v-col order="2">
-                                        <div class="mb-2 display-1">
+                                        <div class="mb-2 titleSize">
                                             NEHS @ CTSP
                                         </div>
-                                        <div class="subtitle-1">
+                                        <div class="contentSize">
+
                                             FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Taiwan Science Park.
                                         </div>
                                     </v-col>
@@ -54,10 +55,10 @@
                                         <img :src="cardItem.imgPath" style="width: 95%">
                                     </v-col>
                                     <v-col order="2">
-                                        <div class="mb-2 display-1">
+                                        <div class="mb-2 titleSize">
                                             {{ cardItem.title }}
                                         </div>
-                                        <div class="subtitle-1">
+                                        <div class="contentSize">
                                             {{ cardItem.content }}
                                         </div>
                                     </v-col>
@@ -67,7 +68,7 @@
                                         md="4"
                                         class="text-center my-auto"
                                     >
-                                        <img :src="cardItem.imgPath" style="width: 95%">
+                                        <img :src="cardItem.imgPath" style="width: 95%;">
                                     </v-col>                        
                                 </v-row>
                             </div>                            
@@ -107,7 +108,7 @@ export default {
             {
                 title: "About Us",
                 content: "We’re Robomania from Taiwan. Our team is a group of students who are passionate about robots and spare no effort to pursue our dreams. Year 2019 is our Rookie year in the field of FIRST, and we’ve gained a lot through the season. We are looking forward to improve in 2020 and share what we have to the society.",
-                imgPath: "",
+                imgPath: require("@/assets/Elements/Home/UnicornRMBG.png"),
                 path: "/Team 7636",
             },
             {
@@ -171,14 +172,13 @@ export default {
     },
 }
 </script>
-
 <style>
 
 .contentSize {
-    font-size: 30px;
+    font-size: 4vmin;
 }
 .titleSize {
-    font-size: 40px;
+    font-size: 8vmin;
     font-weight: bold;
 }
 </style>

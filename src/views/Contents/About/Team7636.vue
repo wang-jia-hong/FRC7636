@@ -5,14 +5,11 @@
         src=""
         >
         </v-img>
-        <v-card 
-        class="pa-10"
-        color="#cbcbcb"
-        height="500">
-            <v-card color="#a3a3a3" height="420">
-                Team7636
-            </v-card>
-        </v-card>
+        <div class="pa-10" style="background-color: #fafafa">
+            <div style="background-color: #a2a2a2" class="mx-auto">
+                Team 7636
+            </div>
+        </div>
     </div>
 </template>
 

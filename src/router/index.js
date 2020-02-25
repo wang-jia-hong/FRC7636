@@ -5,8 +5,8 @@ import Home from '../views/Contents/HomePage.vue'
 
 import FIRST from '../views/Contents/About/FIRSTPage.vue'
 import Team from '../views/Contents/About/Team7636.vue'
-import History from '../views/Contents/About/TeamHistoryPage.vue'
 import Contact from '../views/Contents/About/ContactPage.vue'
+import Outreach from '../views/Contents/About/Outreach.vue'
 import Leader from '../views/Contents/About/LeaderPage.vue'
 import Mentor from '../views/Contents/About/Mentor.vue'
 
@@ -38,16 +38,16 @@ const routes = [
     component: FIRST
   },
   {
-    path: '/Team History',
-    component: History
-  },
-  {
     path: '/Team 7636',
     component: Team
   },
   {
     path: '/Contact',
     component: Contact
+  },
+  {
+    path: '/Outreach',
+    component: Outreach
   },
   {
     path: '/Leader',
@@ -100,7 +100,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })
