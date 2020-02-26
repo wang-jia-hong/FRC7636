@@ -12,7 +12,7 @@
 
         <div class="pa-10" style="background-color: #fafafa">
             <div>
-                <v-row class="justify-center">
+                <v-row class="justify-center align-center">
                     <v-col
                      lg="6"
                      md="6"
