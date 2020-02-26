@@ -53,33 +53,9 @@
           </v-menu>
         </v-tab>
         
-        <v-tab>
-          <v-menu
-            class="align-self-center mr-4 white--text"
-            open-on-hover
-            down
-            offset-y
-          >
-            <template v-slot:activator="{ on }">
-              <div text class="align-self-center mr-4 white--text" v-on="on">
-                Resources
-                <v-icon>mdi-menu-down</v-icon>
-              </div>
-            </template>
-            <v-list>
-              <v-list-item
-                v-for="(resourceItem, index) in resourceItems"
-                :key="index"
-                @click="changePath(`/${resourceItem}`)"
-              >
-                <v-list-item-title>{{ resourceItem }}</v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-menu>
-        </v-tab>
-
-        <v-tab class="white--text" @click="changePath('/Contact')"> Contacts </v-tab>
+        <v-tab class="white--text" @click="changePath('/resource')"> Resources </v-tab>
         <v-tab class="white--text" @click="changePath('/sponsor')"> Sponsors </v-tab>
+        <v-tab class="white--text" @click="changePath('/Contact')"> Contacts </v-tab>
         
       </v-tabs>
   </div>
@@ -93,7 +69,6 @@ export default {
       currentTab: null,
       aboutItems: ["FIRST", "Team 7636", "Outreach", "Leader", "Mentor"],
       eventItems: ["news", "past-seasons"],
-      resourceItems: ["Documents", "CADs", "Videos"],
     }
   },
   methods: {

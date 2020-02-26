@@ -24,7 +24,7 @@
                                         md="4"
                                         class="text-center my-auto"
                                     >
-                                        <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 60%">
+                                        <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 45%">
                                     </v-col>
                                     <v-col order="2">
                                         <div class="mb-2 titleSize">

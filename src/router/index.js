@@ -15,9 +15,7 @@ import Past from '../views/Contents/Event/PastSeason.vue'
 import DeepSpace from '../views/Contents/Event/Past season/2019DeepSpace.vue'
 import InfiniteRecharge from '../views/Contents/Event/Past season/2020InfiniteRecharge.vue'
 
-import CAD from '../views/Contents/Resources/CADPage.vue'
-import Document from '../views/Contents/Resources/Documents.vue'
-import Video from '../views/Contents/Resources/Videos.vue'
+import Resource from '../views/Contents/Resource.vue'
 
 import Sponsor from '../views/Contents/SponsorsPage.vue'
 
@@ -78,19 +76,8 @@ const routes = [
     component: News
   },
   {
-    path: '/Documents',
-    name: 'document',
-    component: Document
-  },
-  {
-    path: '/CADs',
-    name: 'CAD',
-    component: CAD
-  },
-  {
-    path: '/Videos',
-    name: 'video',
-    component: Video
+    path: '/resource',
+    component: Resource,
   },
   {
     path: '/sponsor',
