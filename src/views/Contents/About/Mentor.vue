@@ -2,7 +2,7 @@
     <div>
         <v-img
         aspect-ratio="2"
-        src=""
+        src="@/assets/Elements/FrontIMG/MentorLeaderHeader.png"
         class="align-center"
         >
         <div class="text-center" style="color: white; font-size: 8vmin; font-weight: bold;">
