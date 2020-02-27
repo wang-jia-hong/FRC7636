@@ -11,11 +11,11 @@
         </v-img>
         
         <div
-            class="pa-10"
+            class=""
             style="background-color: #fafafa"
         >
-                <div class="pb-12 pt-6">
-                    <div class="pa-6 mx-auto" height="220" style="background-color: #b2b2b2; width: 95%;">
+                <div class="pb-12 pt-12 pa-8">
+                    <div class="pa-6 mx-auto" height="220" style="width: 95%;">
                         <a href="https://www.frctaichungregional.com.tw/"  style="text-decoration:none; color:white;">
                             <v-hover v-slot:default="{ hover }">
                                 <v-row :class="`elevation-${hover ? 15 : 0}`">
@@ -40,7 +40,61 @@
                         </a>
                     </div>
                 </div>
-                <div style="width:95%; background-color: #a2a2a2;" class="mx-auto pt-8" >
+                <div  class="pt-10 pb-12">
+                    <v-row no-gutters >
+                        <v-col cols="5" class="align-center" style="background-color: #004eb3;">
+                            <div class="text-center ma-12" style="font-size:5vmin;">
+                                NEHS @ CTSP<br>
+                                Students Mentors<br>
+                                <h1> ∞ <br> </h1>
+                                Passions<br>                                
+                            </div>
+                        </v-col>
+                        <v-col cols="7">
+                            <v-row no-gutters style=" height:50%;">
+                                <v-col
+                                 cols="6"
+                                 style="background-color: #1179d9; font-size:4vmin;"
+                                >
+                                    <div class="text-center ma-12">
+                                        60+ <br>
+                                        Team Members <br>                                            
+                                    </div>
+                                </v-col>
+                                <v-col
+                                 cols="6"
+                                 style="background-color: #132473; font-size:4vmin;"
+                                >
+                                    <div class="text-center align-center ma-12">
+                                        3 <br>
+                                        Deartments <br>
+                                    </div>
+                                </v-col>
+                            </v-row>
+                            <v-row no-gutters style=" height:50%;">
+                                <v-col
+                                 cols="6"
+                                 style="background-color: #132473; font-size:4vmin;"
+                                >
+                                    <div class="text-center ma-12">
+                                        2 <br>
+                                        Years Participants <br>                                         
+                                    </div>
+                                </v-col>
+                                <v-col
+                                 cols="6"
+                                 style="background-color: #1179d9; font-size:4vmin;"
+                                >
+                                    <div class="text-center ma-12">
+                                        3<br>
+                                        Regional Competitions<br>
+                                    </div>
+                                </v-col>
+                            </v-row>
+                        </v-col>
+                    </v-row>
+                </div>
+                <div style="width:90%;" class="mx-auto pb-12 pt-12 pa-8" >
                     <div v-for="(cardItem, index) in cardItems" :key="index">
                         <v-hover v-slot:default="{ hover }">
                             <div class="pa-6" height="220" :class="`elevation-${hover ? 20 : 0}`" @click="changePath(cardItem.path)">
@@ -52,7 +106,7 @@
                                         md="4"
                                         class="text-center my-auto"
                                     >
-                                        <img :src="cardItem.imgPath" style="width: 95%">
+                                        <img :src="cardItem.imgPath" style="width: 95%; background-color:black;">
                                     </v-col>
                                     <v-col order="2">
                                         <div class="mb-2 titleSize">
@@ -68,7 +122,7 @@
                                         md="4"
                                         class="text-center my-auto"
                                     >
-                                        <img :src="cardItem.imgPath" style="width: 95%;">
+                                        <img :src="cardItem.imgPath" style=" width: 95%;">
                                     </v-col>                        
                                 </v-row>
                             </div>                            
@@ -175,9 +229,11 @@ export default {
 <style>
 
 .contentSize {
+    color: black;
     font-size: 4vmin;
 }
 .titleSize {
+    color: black;
     font-size: 8vmin;
     font-weight: bold;
 }
