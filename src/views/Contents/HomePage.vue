@@ -49,13 +49,12 @@
                                 <h1> ∞ <br> </h1>
                                 Passions<br>                                
                             </div>
-
                         </v-col>
                         <v-col cols="7">
-                            <v-row no-gutters >
+                            <v-row no-gutters style=" height:50%;">
                                 <v-col
                                  cols="6"
-                                 style="background-color: #1179d9; font-size:4vmin; "
+                                 style="background-color: #1179d9; font-size:4vmin;"
                                 >
                                     <div class="text-center ma-12">
                                         60+ <br>
@@ -72,7 +71,7 @@
                                     </div>
                                 </v-col>
                             </v-row>
-                            <v-row no-gutters>
+                            <v-row no-gutters style=" height:50%;">
                                 <v-col
                                  cols="6"
                                  style="background-color: #132473; font-size:4vmin;"
