@@ -5,7 +5,6 @@ import Home from '../views/Contents/HomePage.vue'
 
 import FIRST from '../views/Contents/About/FIRSTPage.vue'
 import Team from '../views/Contents/About/Team7636.vue'
-import Contact from '../views/Contents/About/ContactPage.vue'
 import Outreach from '../views/Contents/About/Outreach.vue'
 import Leader from '../views/Contents/About/LeaderPage.vue'
 import Mentor from '../views/Contents/About/Mentor.vue'
@@ -18,6 +17,8 @@ import InfiniteRecharge from '../views/Contents/Event/Past season/2020InfiniteRe
 import Resource from '../views/Contents/Resource.vue'
 
 import Sponsor from '../views/Contents/SponsorsPage.vue'
+
+import Contact from '../views/Contents/ContactPage.vue'
 
 Vue.use(VueRouter)
 
