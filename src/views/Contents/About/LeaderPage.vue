@@ -1,7 +1,17 @@
 <template>
+    <div>
+        <v-img
+            aspect-ratio="2"
+            src="@/assets/Elements/FrontIMG/MentorLeaderHeader.png"
+            class="align-center"
+            >
+            <div class="text-center" style="color: white; font-size: 8vmin; font-weight: bold;">
+                Our Leaders
+            </div> 
+        </v-img>
         <div class="pa-10" style="background-color: #fafafa">
-            <div style="background-color: #a2a2a2" class="mx-auto">
-                <h1 class="display-2 text-center py-5">Student Team Leaders</h1>
+            <div class="pa-12 mx-auto">
+                <h1 class="display-2 text-center py-5" style="color: black;">Student Team Leaders</h1>
                 <v-row no-gutters>
                     <v-col 
                      lg="6"
@@ -11,20 +21,25 @@
                      :key="index"
                      class="text-center my-8"
                     >
-                        <h3>
-                            {{ leaderInfomation.title }}
-                        </h3>
-                        <hr style="width: 60%" class="mx-auto mb-2">
-                        <div>
-                            {{ leaderInfomation.name }}
+                        <div >
+                            <div class="title">
+                                {{ leaderInfomation.title }}
+                            </div>
+                            <hr style="width: 60%;" color="#000" class="mx-auto mb-2">
+                            <div class="content">
+                                {{ leaderInfomation.name }}
+                            </div>
+                            <div class="content">
+                                {{ leaderInfomation.email }}
+                            </div>                             
                         </div>
-                        <div>
-                            {{ leaderInfomation.email }}
-                        </div>                  
+                 
                     </v-col>
                 </v-row>
             </div>
-        </div>
+        </div>        
+    </div>
+
 </template>
 
 <script>
@@ -85,3 +100,14 @@ export default {
     })
 }
 </script>
+<style>
+    .title{
+        font-size: 12vmax;
+        font-weight: bold;
+        color: black;
+    }
+    .content{
+        font-size: 4vmin;
+        color: black;
+    }
+</style>

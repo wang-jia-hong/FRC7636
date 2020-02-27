@@ -57,7 +57,7 @@ export default {
           },
           {
             name: "Team #7636",
-            path: "/#7636"
+            path: "/Team 7636"
           }
         ]
       },
