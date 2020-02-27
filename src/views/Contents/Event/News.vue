@@ -57,11 +57,11 @@ export default {
                 subjects: [
                     {
                         title: "2020 Build Season",
-                        image: "",
+                        image: require("@/assets/Elements/News/Events-News CTSP regional.png"),
                     },
                     {
                         title: "2019 Maker Festival",
-                        image: "",
+                        image: require("@/assets/Elements/News/Events-News CTSP regional.png"),
                     },
                 ],             
             },
