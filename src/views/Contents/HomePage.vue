@@ -175,7 +175,7 @@ export default {
                 title: "Outreach",
                 content: "Outreach program is one of the most important task that we do. It is very popular to use technology devices nowadays and it is very easy to reach education resources. We want to develop something defferent according to the different stories we’ve experienced. We offer camps to public and we also demonstrate the spirit and our team while science fair and some festivals.",
                 imgPath: require("@/assets/Elements/Home/GroupPhoto.jpg"),
-                path: "",
+                path: "/Outreach",
             },
         ],
         bottomItems: [
