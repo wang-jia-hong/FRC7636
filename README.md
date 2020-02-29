@@ -1,7 +1,7 @@
 # FRC7636_Website
 
 
-正式發布地點：https://frc7636robmania.github.io/FRC7636/
+正式發布地點：https://frc7636robomania.github.io/FRC7636/
 測試網址： http://cathy80110017.github.io/FRC7636/
 
 
