@@ -5,17 +5,17 @@
             src="@/assets/Elements/FrontIMG/IMG_9038.jpg"
             class="d-flex align-end"
         >
-            <h1 class="ml-6 mb-2"  style="font-style: italic;">
+            <h1 class="ml-8 mb-2"  style="font-style: italic; font-size: 7vmin;">
                 FRC #7636<br />Robomania            
             </h1>
         </v-img>
         
         <div
-            class="pa-10"
+            class=""
             style="background-color: #fafafa"
         >
-                <div class="pb-12 pt-6">
-                    <div class="pa-6 mx-auto" height="220" style="background-color: #b2b2b2; width: 95%;">
+                <div class="pb-12 pt-12 pa-8">
+                    <div class="pa-6 mx-auto" height="220" style="width: 95%;">
                         <a href="https://www.frctaichungregional.com.tw/"  style="text-decoration:none; color:white;">
                             <v-hover v-slot:default="{ hover }">
                                 <v-row :class="`elevation-${hover ? 15 : 0}`">
@@ -24,7 +24,7 @@
                                         md="4"
                                         class="text-center my-auto"
                                     >
-                                        <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 60%">
+                                        <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 45%">
                                     </v-col>
                                     <v-col order="2">
                                         <div class="mb-2 titleSize">
@@ -40,7 +40,41 @@
                         </a>
                     </div>
                 </div>
-                <div style="width:95%; background-color: #a2a2a2;" class="mx-auto pt-8" >
+                <v-row no-gutters class="pt-6 pb-6" style="height: 60vh;">
+                    <v-col
+                     cols="5"
+                     class="d-flex align-center justify-center pa-12 "
+                     style="background-color: #004eb3; height:100%"
+                    >
+                        <div class="text-center" style="font-size:5vmin;">
+                            NEHS @ CTSP<br>
+                            Students Mentors<br>
+                            <h1> ∞ <br> </h1>
+                            Passions<br>                                
+                        </div>
+                    </v-col>
+                    <v-col
+                     cols="7"
+                     style="height:100%"
+                    >
+                        <v-row no-gutters style="height:100%">
+                            <v-col
+                                cols="6"
+                                style="font-size:4vmin;"
+                                class="align-center justify-center d-flex"
+                                v-for="(block, index) in blocks"
+                                :key="index"
+                                :class="block.color"
+                            >
+                                <div class="text-center ma-10">
+                                    {{block.content1}} <br>
+                                    {{block.content2}} <br>                                            
+                                </div>
+                            </v-col>
+                        </v-row>
+                    </v-col>
+                </v-row>
+                <div style="width:90%;" class="mx-auto pb-12 pt-12 pa-8" >
                     <div v-for="(cardItem, index) in cardItems" :key="index">
                         <v-hover v-slot:default="{ hover }">
                             <div class="pa-6" height="220" :class="`elevation-${hover ? 20 : 0}`" @click="changePath(cardItem.path)">
@@ -52,7 +86,7 @@
                                         md="4"
                                         class="text-center my-auto"
                                     >
-                                        <img :src="cardItem.imgPath" style="width: 95%">
+                                        <img :src="cardItem.imgPath" style="width: 95%; background-color:black;">
                                     </v-col>
                                     <v-col order="2">
                                         <div class="mb-2 titleSize">
@@ -68,7 +102,7 @@
                                         md="4"
                                         class="text-center my-auto"
                                     >
-                                        <img :src="cardItem.imgPath" style="width: 95%;">
+                                        <img :src="cardItem.imgPath" style=" width: 95%;">
                                     </v-col>                        
                                 </v-row>
                             </div>                            
@@ -77,8 +111,8 @@
                     </div>                
                 </div>
             <div>
-                <div style="color: black; font-size: 1.1em;" class="px-10 text-center">
-                    <v-row>
+                <div style="color: black; font-size: 1.1em;" class="pb-12 pa-10 text-center">
+                    <v-row class="pb-12">
                         <v-col
                             cols="12"
                             sm="6"
@@ -91,11 +125,10 @@
                                     <img :src="bottomItem.photo" style="width: 90%;" class="mx-auto"><br>
                                     {{ bottomItem.text }}
                                 </div>                                
-                            </v-hover>                                
+                            </v-hover>                               
                         </v-col>
                     </v-row>                        
                 </div>
-                <hr color="#8f8f8f" class="mx-auto mb-5" style="width: 85%">
             </div>
         </div>
     </div>
@@ -104,6 +137,28 @@
 <script>
 export default {
     data: ()=> ({
+        blocks:[
+            {
+                content1: "60+",
+                content2: "Team Members",
+                color: "blockColor1",
+            },
+            {
+                content1: "3",
+                content2: "Deartments",
+                color: "blockColor2",
+            },
+            {
+                content1: "2",
+                content2: "Years Participants",
+                color: "blockColor2",
+            },
+            {
+                content1: "3",
+                content2: "Regional Competitions",
+                color: "blockColor1",
+            },
+        ],
         cardItems: [
             {
                 title: "About Us",
@@ -121,7 +176,7 @@ export default {
                 title: "Outreach",
                 content: "Outreach program is one of the most important task that we do. It is very popular to use technology devices nowadays and it is very easy to reach education resources. We want to develop something defferent according to the different stories we’ve experienced. We offer camps to public and we also demonstrate the spirit and our team while science fair and some festivals.",
                 imgPath: require("@/assets/Elements/Home/GroupPhoto.jpg"),
-                path: "",
+                path: "/Outreach",
             },
         ],
         bottomItems: [
@@ -150,8 +205,6 @@ export default {
     computed: {
       // eslint-disable-next-line vue/return-in-computed-property
       imageHeight () {
-        // eslint-disable-next-line no-console
-        console.log(document.body.clientWidth)
         switch (this.$vuetify.breakpoint.name) {
           case 'xs': return 1
           case 'sm': return 1
@@ -175,10 +228,21 @@ export default {
 <style>
 
 .contentSize {
-    font-size: 4vh;
+    color: black;
+    font-size: 4vmin;
 }
 .titleSize {
-    font-size: 8vh;
+    color: black;
+    font-size: 8vmin;
     font-weight: bold;
 }
+
+.blockColor1{
+    background-color: #1179d9
+}
+
+.blockColor2{
+    background-color: #132473
+}
+
 </style>

@@ -5,14 +5,14 @@
             src="@/assets/Elements/FrontIMG/IMG_9038.jpg"
             class="d-flex align-end"
         >
-            <h1 class="ml-3 mb-2">
+            <h1 class="ml-3 mb-2" style="font-style: italic; font-size: 7vmin;">
                 News &<br />Upcoming Events            
             </h1>
         </v-img>
         
         <div
             class="pa-10"
-            style="background-color: #cbcbcb"
+            style="background-color: #fafafa"
         >
             <div v-for="(topic, index) in topics" :key="index">
                 <h1 style="font-style: italic;"> {{ topic.name }} </h1>
@@ -24,10 +24,8 @@
                             <div class="" style="width:75%; position: relative; left:25%;">
                                 <h5 class="text-right" style="font-style: italic; ">{{ subject.title }}</h5>
                             </div>
-                            
                         </div>
-                        
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,7 +41,7 @@ export default {
                 subjects: [
                     {
                         title: "2020 Science Park Taichung Regional Competition",
-                        image: require("@/assets/Elements/News/Events-News CTSP regional.png"),
+                        image: require("@/assets/Elements/News/Events-News CTSP regional.jpg"),
                     },
                     {
                         title: "2020 Sillicon Valley Regional Competition",
@@ -57,11 +55,11 @@ export default {
                 subjects: [
                     {
                         title: "2020 Build Season",
-                        image: require("@/assets/Elements/News/Events-News CTSP regional.png"),
+                        image: require("@/assets/Elements/News/Events-News CTSP regional.jpg"),
                     },
                     {
                         title: "2019 Maker Festival",
-                        image: require("@/assets/Elements/News/Events-News CTSP regional.png"),
+                        image: require("@/assets/Elements/News/Events-News CTSP regional.jpg"),
                     },
                 ],             
             },
@@ -85,5 +83,11 @@ export default {
 </script>
 
 <style>
-
+.contentSize {
+    font-size: 4vmin;
+}
+.titleSize {
+    font-size: 8vmin;
+    font-weight: bold;
+}
 </style>

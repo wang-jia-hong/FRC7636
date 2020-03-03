@@ -1,26 +1,29 @@
 <template>
   <v-footer dark padless>
-    <v-row>
+    <v-row class="mt-5">
+      <v-col cols="12" md="3" class="d-flex justify-center">
+        <img class="mb-5" src="../assets/FIRST_logo.png" style="width: 120px;">
+      </v-col>
 
-      <v-col class="text-center my-auto" v-for="(item, index) in items" :key="`footer-${index}`">
-        <h2>{{ item.title }}</h2>
-        <hr class="mx-auto mb-5" width="150">
-        <h3 v-for="(link, index) in item.links" :key="`link-${index}`">
+      <v-col cols="12" md="2" class="text-center my-auto mb-5" v-for="(item, index) in items" :key="`footer-${index}`">
+        <div style="font-weight: bold;">{{ item.title }}</div>
+        <hr class="mx-auto mb-4" width="150">
+        <div
+         v-for="(link, index) in item.links"
+         :key="`link-${index}`"
+         style="font-weight: bold;"
+        >
           <router-link class="no-underline white--text" :to="link.path">
             {{ link.name }}
           </router-link>
-        </h3>
+        </div>
       </v-col>
 
-      <v-col class="text-center my-auto">
-        <h2>Contact Us</h2>
+      <v-col cols="12" md="3" class="text-center my-auto">
+        <div class="mb-" style="font-weight: bold;">Contact Us</div>
         <v-btn v-for="(icon, index) in icons" :key="`icon-${index}`" class="white-text" :href="icon.path" target="_blank" icon>
           <v-icon size="24px">{{ icon.title }}</v-icon>
         </v-btn>
-      </v-col>
-
-      <v-col>
-        <v-img src="../assets/FIRST_logo.png" class="ma-3" width="130"></v-img>
       </v-col>
     </v-row>
   </v-footer>
@@ -57,20 +60,20 @@ export default {
           },
           {
             name: "Team #7636",
-            path: "/#7636"
+            path: "/Team 7636"
           }
         ]
       },
       {
-        title: "SPONSORS",
+        title: "OUTREACH",
         links: [
+          {
+            name: "Outreach",
+            path: "/Outreach"
+          },
           {
             name: "Our Sponsors",
             path: "/sponsor"
-          },
-          {
-            name: "Community",
-            path: ""
           }
         ]
       },
@@ -88,7 +91,19 @@ export default {
         ]
       }
     ]
-  })
+  }),
+  computed: {
+    // eslint-disable-next-line vue/return-in-computed-property
+    imageHeight () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 100
+        case 'sm': return 100
+        case 'md': return 100
+        case 'lg': return 200
+        case 'xl': return 200
+      }
+    },
+  },
 };
 </script>
 

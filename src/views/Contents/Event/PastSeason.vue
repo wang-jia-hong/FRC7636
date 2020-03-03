@@ -6,14 +6,14 @@
             src="@/assets/Elements/FrontIMG/Events-Past seasons.jpeg"
             class="d-flex align-end"
         >
-        <h1 class="ml-3 mb-2">
+        <h1 class="ml-3 mb-2" style="font-style: italic; font-size: 7vmin;">
             FRC<br/> Past Seasons            
         </h1>
         </v-img>
         
         <div
           class="pa-10"
-          style="background-color: #cbcbcb"
+          style="background-color: #fafafa"
         >
           <div class="inside">
             <div v-for="(season, index) in seasons" :key="index">
@@ -28,10 +28,10 @@
                           <img :src="season.photo" style="width: 80%">
                       </v-col>
                       <v-col order="2">
-                          <div class="mb-2 display-1">
+                          <div class="mb-2 titleSize">
                               {{ season.title }}
                           </div>
-                          <div class=" subtitle-1">
+                          <div class="contentSize">
                               {{ season.text }}
                           </div>
                       </v-col>
@@ -94,5 +94,12 @@ export default {
 .inside {
     background-color: #a3a3a3;
     width: 100%;    
+}
+.contentSize {
+    font-size: 4vmin;
+}
+.titleSize {
+    font-size: 8vmin;
+    font-weight: bold;
 }
 </style>

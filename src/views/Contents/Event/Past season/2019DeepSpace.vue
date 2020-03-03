@@ -13,7 +13,7 @@
 
         <div 
          class="pa-10"
-         style="background-color: #cbcbcb"
+         style="background-color: #fafafa"
         >
             <div style="background-color: #a3a3a3">
                 <div class="pa-6 mx-auto" height="220">
@@ -26,10 +26,10 @@
                             <img src="@/assets/Elements/Everywhere-2019 Deep Space.png" style="width: 95%">
                         </v-col>
                         <v-col order="2">
-                            <div class="mb-2 display-1">
+                            <div class="mb-2 titleSize">
                                 FRC 2019: Deep Space
                             </div>
-                            <div class="subtitle-1">
+                            <div class="contentSize">
                                 As for the theme of 2019, we will have to grab and deliver the Hatch Panels and the Cargo and attach or put it onto the rockets and cargo ships. Three teams in the alliance had to leave the three-leveled platform at the beginning, and return at end game time. We have to drive to one of the many cargo ships and rockets to score. What’s special is, we connected the webcam to our driver in which that we can score more points during san storm period.
                             </div>
                         </v-col>
@@ -37,12 +37,19 @@
                 </div>
             </div>
             <v-card-text>
-                <carousel-3d>      
-                    <slide v-for="i in 5" :index="i" :key="i">
-                        <span></span>
+                <carousel-3d
+                 :autoplay="true"
+                 :autoplay-timeout="5000"        
+                >      
+                    <slide v-for="(image, index) in images"
+                     :index="index"
+                     :key="index"
+                    >
+                        <img :src="image.path" style="">
                     </slide>
                 </carousel-3d>
             </v-card-text>
+            
         </div>
 
     </div>
@@ -65,11 +72,34 @@ computed: {
       }
     },
   },
-data (){
-    return{
-        slides: 5,    
-    }
-},
+    data:()=>({
+        images:[
+            {
+                path: require("@/assets/Elements/2019IMG/1.jpg"),
+            },
+            {
+                path: require("@/assets/Elements/2019IMG/2.jpg"),
+            },
+            {
+                path: require("@/assets/Elements/2019IMG/3.jpg"),
+            },
+            {
+                path: require("@/assets/Elements/2019IMG/4.jpg"),
+            },
+            {
+                path: require("@/assets/Elements/2019IMG/5.jpg"),
+            },
+            {
+                path: require("@/assets/Elements/2019IMG/6.jpg"),
+            },
+            {
+                path: require("@/assets/Elements/2019IMG/7.jpg"),
+            },
+            {
+                path: require("@/assets/Elements/2019IMG/8.jpg"),
+            },
+        ]
+    }),
 components: {
     Carousel3d,
     Slide
@@ -77,4 +107,11 @@ components: {
 }
 </script>
 <style>
+.contentSize {
+    font-size: 4vmin;
+}
+.titleSize {
+    font-size: 8vmin;
+    font-weight: bold;
+}
 </style>

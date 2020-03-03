@@ -5,8 +5,7 @@ import Home from '../views/Contents/HomePage.vue'
 
 import FIRST from '../views/Contents/About/FIRSTPage.vue'
 import Team from '../views/Contents/About/Team7636.vue'
-import History from '../views/Contents/About/TeamHistoryPage.vue'
-import Contact from '../views/Contents/About/ContactPage.vue'
+import Outreach from '../views/Contents/About/Outreach.vue'
 import Leader from '../views/Contents/About/LeaderPage.vue'
 import Mentor from '../views/Contents/About/Mentor.vue'
 
@@ -15,18 +14,19 @@ import Past from '../views/Contents/Event/PastSeason.vue'
 import DeepSpace from '../views/Contents/Event/Past season/2019DeepSpace.vue'
 import InfiniteRecharge from '../views/Contents/Event/Past season/2020InfiniteRecharge.vue'
 
-import CAD from '../views/Contents/Resources/CADPage.vue'
-import Document from '../views/Contents/Resources/Documents.vue'
-import Video from '../views/Contents/Resources/Videos.vue'
+import Resource from '../views/Contents/Resource.vue'
 
 import Sponsor from '../views/Contents/SponsorsPage.vue'
+
+import Contact from '../views/Contents/ContactPage.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect: 'Home'
+    name: 'Home',
+    component: Home
   },
   {
     path: '/home',
@@ -38,16 +38,16 @@ const routes = [
     component: FIRST
   },
   {
-    path: '/Team History',
-    component: History
-  },
-  {
     path: '/Team 7636',
     component: Team
   },
   {
     path: '/Contact',
     component: Contact
+  },
+  {
+    path: '/Outreach',
+    component: Outreach
   },
   {
     path: '/Leader',
@@ -78,19 +78,8 @@ const routes = [
     component: News
   },
   {
-    path: '/Documents',
-    name: 'document',
-    component: Document
-  },
-  {
-    path: '/CADs',
-    name: 'CAD',
-    component: CAD
-  },
-  {
-    path: '/Videos',
-    name: 'video',
-    component: Video
+    path: '/resource',
+    component: Resource,
   },
   {
     path: '/sponsor',
