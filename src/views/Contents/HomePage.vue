@@ -40,60 +40,40 @@
                         </a>
                     </div>
                 </div>
-                <div  class="pt-10 pb-12">
-                    <v-row no-gutters >
-                        <v-col cols="5" class="align-center" style="background-color: #004eb3;">
-                            <div class="text-center ma-12" style="font-size:5vmin;">
-                                NEHS @ CTSP<br>
-                                Students Mentors<br>
-                                <h1> ∞ <br> </h1>
-                                Passions<br>                                
-                            </div>
-                        </v-col>
-                        <v-col cols="7">
-                            <v-row no-gutters style=" height:50%;">
-                                <v-col
-                                 cols="6"
-                                 style="background-color: #1179d9; font-size:4vmin;"
-                                >
-                                    <div class="text-center ma-12">
-                                        60+ <br>
-                                        Team Members <br>                                            
-                                    </div>
-                                </v-col>
-                                <v-col
-                                 cols="6"
-                                 style="background-color: #132473; font-size:4vmin;"
-                                >
-                                    <div class="text-center align-center ma-12">
-                                        3 <br>
-                                        Deartments <br>
-                                    </div>
-                                </v-col>
-                            </v-row>
-                            <v-row no-gutters style=" height:50%;">
-                                <v-col
-                                 cols="6"
-                                 style="background-color: #132473; font-size:4vmin;"
-                                >
-                                    <div class="text-center ma-12">
-                                        2 <br>
-                                        Years Participants <br>                                         
-                                    </div>
-                                </v-col>
-                                <v-col
-                                 cols="6"
-                                 style="background-color: #1179d9; font-size:4vmin;"
-                                >
-                                    <div class="text-center ma-12">
-                                        3<br>
-                                        Regional Competitions<br>
-                                    </div>
-                                </v-col>
-                            </v-row>
-                        </v-col>
-                    </v-row>
-                </div>
+                <v-row no-gutters class="pt-12 pb-12" style="height: 90vh;">
+                    <v-col
+                     cols="5"
+                     class="d-flex align-center justify-center pa-12 "
+                     style="background-color: #004eb3; height:100%"
+                    >
+                        <div class="text-center" style="font-size:5vmin;">
+                            NEHS @ CTSP<br>
+                            Students Mentors<br>
+                            <h1> ∞ <br> </h1>
+                            Passions<br>                                
+                        </div>
+                    </v-col>
+                    <v-col
+                     cols="7"
+                     style="height:100%"
+                    >
+                        <v-row no-gutters style="height:100%">
+                            <v-col
+                                cols="6"
+                                style="font-size:4vmin;"
+                                class="align-center justify-center d-flex"
+                                v-for="(block, index) in blocks"
+                                :key="index"
+                                :class="block.color"
+                            >
+                                <div class="text-center ma-10">
+                                    {{block.content1}} <br>
+                                    {{block.content2}} <br>                                            
+                                </div>
+                            </v-col>
+                        </v-row>
+                    </v-col>
+                </v-row>
                 <div style="width:90%;" class="mx-auto pb-12 pt-12 pa-8" >
                     <div v-for="(cardItem, index) in cardItems" :key="index">
                         <v-hover v-slot:default="{ hover }">
@@ -158,6 +138,28 @@
 <script>
 export default {
     data: ()=> ({
+        blocks:[
+            {
+                content1: "60+",
+                content2: "Team Members",
+                color: "blockColor1",
+            },
+            {
+                content1: "3",
+                content2: "Deartments",
+                color: "blockColor2",
+            },
+            {
+                content1: "2",
+                content2: "Years Participants",
+                color: "blockColor2",
+            },
+            {
+                content1: "3",
+                content2: "Regional Competitions",
+                color: "blockColor1",
+            },
+        ],
         cardItems: [
             {
                 title: "About Us",
@@ -237,4 +239,13 @@ export default {
     font-size: 8vmin;
     font-weight: bold;
 }
+
+.blockColor1{
+    background-color: #1179d9
+}
+
+.blockColor2{
+    background-color: #132473
+}
+
 </style>
