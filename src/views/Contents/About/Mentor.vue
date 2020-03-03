@@ -5,9 +5,9 @@
         src="@/assets/Elements/FrontIMG/MentorLeaderHeader.png"
         class="align-center"
         >
-        <div class="text-center" style="color: white; font-size: 8vmin; font-weight: bold;">
-            Our Mentors
-        </div>
+            <div class="text-center" style="color: white; font-size: 8vmin; font-weight: bold;">
+                Our Mentors
+            </div>
             
         </v-img>
         <div class="pa-10" style="background-color: #d5d5d5;">

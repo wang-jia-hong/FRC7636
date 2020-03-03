@@ -2,8 +2,12 @@
     <div>
         <v-img
         aspect-ratio="2"
-        src=""
+        src="@/assets/Elements/FrontIMG/About 7636.jpg"
+        class="align-center"
         >
+            <div class="text-center" style="color: white; font-size: 10vmin; font-weight: bold;">
+                Contact Us
+            </div>
         </v-img>
         <div class="pa-10" style="background-color: #fafafa">
             <v-row>

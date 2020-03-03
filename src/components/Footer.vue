@@ -1,15 +1,18 @@
 <template>
   <v-footer dark padless>
     <v-row>
-
       <v-col class="text-center my-auto" v-for="(item, index) in items" :key="`footer-${index}`">
-        <h2>{{ item.title }}</h2>
+        <div style="3vmin; font-weight: bold;">{{ item.title }}</div>
         <hr class="mx-auto mb-5" width="150">
-        <h3 v-for="(link, index) in item.links" :key="`link-${index}`">
+        <div
+         v-for="(link, index) in item.links"
+         :key="`link-${index}`"
+         style="3vmin; font-weight: bold;"
+        >
           <router-link class="no-underline white--text" :to="link.path">
             {{ link.name }}
           </router-link>
-        </h3>
+        </div>
       </v-col>
 
       <v-col class="text-center my-auto">
@@ -62,15 +65,15 @@ export default {
         ]
       },
       {
-        title: "SPONSORS",
+        title: "OUTREACH",
         links: [
+          {
+            name: "Outreach",
+            path: "/Outreach"
+          },
           {
             name: "Our Sponsors",
             path: "/sponsor"
-          },
-          {
-            name: "Community",
-            path: ""
           }
         ]
       },
