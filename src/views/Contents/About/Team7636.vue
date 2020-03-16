@@ -2,7 +2,7 @@
     <div>
         <v-img
         aspect-ratio="2"
-        src="@/assets/Elements/FrontIMG/MentorLeaderHeader.png"
+        src="@/assets/Elements/FrontIMG/MentorLeaderHeader.jpg"
         class="align-center"
         >
             <div class="text-center" style="color: white; font-size: 8vmin; font-weight: bold;">
@@ -29,7 +29,7 @@
 
         <v-img
         aspect-ratio="2.5"
-        src="@/assets/Elements/About/Team7636/About 7636 pic1.png"
+        src="@/assets/Elements/About/Team7636/About 7636 pic1.jpg"
         class="align-center"
         >
         </v-img>
@@ -82,7 +82,7 @@ export default {
             },
             {
                 content: "Base on our missions, we held both recruiting-educating programs and outreach programs. We uses our free time during and between semesters to recruit more team members and to teach them skills in different fields. We also reach out to the public by collaborating with the government or minor schools. We practice and gain skills through the lesson, fulfilling our self and changing the world at the same time.",
-                imgPath: require("@/assets/Elements/Home/GroupPhoto.jpg"),
+                imgPath: require("@/assets/Elements/About/Team7636/IMG_8169.jpg"),
             },
         ],
     }),
