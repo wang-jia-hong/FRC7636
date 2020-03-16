@@ -10,14 +10,15 @@
             </h1>
         </v-img>
         <div class="py-10" style="background-color: #fafafa">
-            <v-row justify="center" style="">
-                <v-expansion-panels accordion>
+            <v-row justify="center">
+                <v-expansion-panels inset focusable>
                 <v-expansion-panel
                     v-for="(resource, index) in resources"
                     :key="index"
+                    style="background: #a3a3a3; color: white"
                 >
                     <v-expansion-panel-header>{{resource.name}}</v-expansion-panel-header>
-                    <v-expansion-panel-content>
+                    <v-expansion-panel-content class="mt-6">
                         {{resource.content}}
                     </v-expansion-panel-content>
                 </v-expansion-panel>
