@@ -24,10 +24,8 @@
                             <div class="" style="width:75%; position: relative; left:25%;">
                                 <h5 class="text-right" style="font-style: italic; ">{{ subject.title }}</h5>
                             </div>
-                            
                         </div>
-                        
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,7 +41,7 @@ export default {
                 subjects: [
                     {
                         title: "2020 Science Park Taichung Regional Competition",
-                        image: require("@/assets/Elements/News/Events-News CTSP regional.png"),
+                        image: require("@/assets/Elements/News/Events-News CTSP regional.jpg"),
                     },
                     {
                         title: "2020 Sillicon Valley Regional Competition",
@@ -57,11 +55,11 @@ export default {
                 subjects: [
                     {
                         title: "2020 Build Season",
-                        image: require("@/assets/Elements/News/Events-News CTSP regional.png"),
+                        image: require("@/assets/Elements/News/Events-News CTSP regional.jpg"),
                     },
                     {
                         title: "2019 Maker Festival",
-                        image: require("@/assets/Elements/News/Events-News CTSP regional.png"),
+                        image: require("@/assets/Elements/News/Events-News CTSP regional.jpg"),
                     },
                 ],             
             },

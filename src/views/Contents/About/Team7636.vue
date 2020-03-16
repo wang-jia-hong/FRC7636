@@ -2,7 +2,7 @@
     <div>
         <v-img
         aspect-ratio="2"
-        src="@/assets/Elements/FrontIMG/MentorLeaderHeader.png"
+        src="@/assets/Elements/FrontIMG/MentorLeaderHeader.jpg"
         class="align-center"
         >
             <div class="text-center" style="color: white; font-size: 8vmin; font-weight: bold;">
@@ -29,7 +29,7 @@
 
         <v-img
         aspect-ratio="2.5"
-        src="@/assets/Elements/About/Team7636/About 7636 pic1.png"
+        src="@/assets/Elements/About/Team7636/About 7636 pic1.jpg"
         class="align-center"
         >
         </v-img>

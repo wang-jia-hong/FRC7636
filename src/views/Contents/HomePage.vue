@@ -40,7 +40,7 @@
                         </a>
                     </div>
                 </div>
-                <v-row no-gutters class="pt-12 pb-12" style="height: 90vh;">
+                <v-row no-gutters class="pt-6 pb-6" style="height: 60vh;">
                     <v-col
                      cols="5"
                      class="d-flex align-center justify-center pa-12 "
@@ -111,8 +111,8 @@
                     </div>                
                 </div>
             <div>
-                <div style="color: black; font-size: 1.1em;" class="px-10 text-center">
-                    <v-row>
+                <div style="color: black; font-size: 1.1em;" class="pb-12 pa-10 text-center">
+                    <v-row class="pb-12">
                         <v-col
                             cols="12"
                             sm="6"
@@ -125,11 +125,10 @@
                                     <img :src="bottomItem.photo" style="width: 90%;" class="mx-auto"><br>
                                     {{ bottomItem.text }}
                                 </div>                                
-                            </v-hover>                                
+                            </v-hover>                               
                         </v-col>
                     </v-row>                        
                 </div>
-                <hr color="#8f8f8f" class="mx-auto mb-5" style="width: 85%">
             </div>
         </div>
     </div>
@@ -206,8 +205,6 @@ export default {
     computed: {
       // eslint-disable-next-line vue/return-in-computed-property
       imageHeight () {
-        // eslint-disable-next-line no-console
-        console.log(document.body.clientWidth)
         switch (this.$vuetify.breakpoint.name) {
           case 'xs': return 1
           case 'sm': return 1

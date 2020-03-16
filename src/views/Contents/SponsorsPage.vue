@@ -2,7 +2,7 @@
     <div>
         <v-img
         aspect-ratio="2"
-        src="@/assets/Elements/FrontIMG/Sponsor header.png"
+        src="@/assets/Elements/FrontIMG/Sponsor header.jpg"
         class="align-center"
         >
             <div class="text-center" style="color: white; font-size: 9vmin; font-weight: bold;">
