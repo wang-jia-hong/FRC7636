@@ -169,7 +169,7 @@ export default {
             {
                 title: "FRC 2019",
                 content: "We’ve been participating in the Southern Cross Regional Competition located in NSW of Australia in our rookie year, 2019. We’ve gained a lot through the pass season. Our robot, Charlie’s Comet, had been upgraded and improved through the CTSP Pre-competition and the CTSP off season competition.",
-                imgPath: require("@/assets/Elements/Home/IMG_8742.jpeg"),
+                imgPath: require("@/assets/Elements/Home/IMG_8742.jpg"),
                 path: "/2019DeepSpace",
             },
             {
@@ -186,7 +186,7 @@ export default {
                 path: "/2019DeepSpace",
             },
             {
-                photo: require("@/assets/Elements/Home/Charlee's Comets.jpeg"),
+                photo: require("@/assets/Elements/Home/Charlee's Comets.jpg"),
                 text: "2019 Charlle's Comet",
                 path: "",
             },
