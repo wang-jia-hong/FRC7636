@@ -6,7 +6,7 @@
             class="d-flex align-end"
         >
             <h1 class="ml-8 mb-2"  style="font-style: italic; font-size: 7vmin;">
-                FRC #7636-2021<br />Robomania            
+                FRC #7636<br />Robomania            
             </h1>
         </v-img>
         
