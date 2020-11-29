@@ -5,7 +5,7 @@
         src="@/assets/Elements/FrontIMG/Sponsor header.jpg"
         class="align-center"
         >
-            <div class="text-center" style="color: white; font-size: 9vmin; font-weight: bold;">
+            <div class="text-center" style="color: white; font-size: 6vmin; font-weight: bold;">
                 Sponsors
             </div>
         </v-img>
@@ -21,7 +21,7 @@
                      v-for="(sponsor, index) in sponsors" :key="index"
                     >
                         <a :href="sponsor.path">
-                            <img :src="sponsor.logo" style="width: 50%;">
+                            <img :src="sponsor.logo" style="width: 40%;">
                         </a>
                     </v-col>
                 </v-row>
