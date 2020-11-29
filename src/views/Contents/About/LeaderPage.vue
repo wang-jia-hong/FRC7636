@@ -48,7 +48,7 @@ export default {
         leaderInfomations: [
             {
                 title: "TEAM LEADER",
-                name: "Tung-Lun YANG", 
+                name: "Ting-Yu HUANG", 
                 email: "protire0821@gmail.com",
             },
             {
