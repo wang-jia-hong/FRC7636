@@ -5,7 +5,7 @@
         src="@/assets/Elements/FrontIMG/About 7636.jpg"
         class="align-center"
         >
-            <div class="text-center" style="color: white; font-size: 10vmin; font-weight: bold;">
+            <div class="text-center" style="color: white; font-size: 8vmin; font-weight: bold;">
                 Contact Us
             </div>
         </v-img>
@@ -33,7 +33,7 @@
                     <v-row>
                         <v-col cols="3" v-for="(icon, index) in icons" :key="index">
                             <v-btn :href="icon.path" target="_blank" icon>
-                                <v-icon size="15vmin" color="black">{{ icon.title }}</v-icon>
+                                <v-icon size="10vmin" color="black">{{ icon.title }}</v-icon>
                             </v-btn>                            
                         </v-col>                        
                     </v-row>
@@ -83,6 +83,6 @@ export default {
 </script>
 <style >
     .size{
-        font-size: 6vmin;
+        font-size: 5vmin;
     }
 </style>
