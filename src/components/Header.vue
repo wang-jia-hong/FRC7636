@@ -11,7 +11,7 @@
       </v-col>
     </v-row>
     <vue-position-sticky :offsetTop="0">
-      <v-col>
+      <v-col class="pt-0">
         <Toolbar></Toolbar>
       </v-col>
     </vue-position-sticky>
