@@ -1,0 +1,12 @@
+$main-color: #002a5c;
+$text-color: white;
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}

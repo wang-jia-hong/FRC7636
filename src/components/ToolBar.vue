@@ -1,22 +1,18 @@
 <template>
-  <div>
+  <v-row id="bar">
+    <v-col cols="9" lg="9" md="9" sm="9">
       <v-tabs
         v-model="currentTab"
         background-color="#002a5c"
+        class=" white--text"
+        show-arrows
         grow
-        class="white--text"
       >
-        <v-tab class="white--text" @click="changePath('/home')"> Home </v-tab>
-
+        <v-tab class=" white--text" @click="changePath('/home')"> Home </v-tab>
         <v-tab>
-          <v-menu class="white--text" open-on-hover down offset-y>
+          <v-menu class=" white--text" open-on-hover down offset-y>
             <template v-slot:activator="{ on }">
-              <div
-                text
-                color="white"
-                class="align-self-center white--text"
-                v-on="on"
-              >
+              <div text class="align-self-center white--text" v-on="on">
                 About
                 <v-icon>mdi-menu-down</v-icon>
               </div>
@@ -52,33 +48,46 @@
             </v-list>
           </v-menu>
         </v-tab>
-        
-        <v-tab class="white--text" @click="changePath('/resource')"> Resources </v-tab>
-        <v-tab class="white--text" @click="changePath('/sponsor')"> Sponsors </v-tab>
-        <v-tab class="white--text" @click="changePath('/Contact')"> Contacts </v-tab>
-        
+
+        <v-tab class=" white--text" @click="changePath('/resource')">
+          Resources
+        </v-tab>
+        <v-tab class=" white--text" @click="changePath('/sponsor')">
+          Sponsors
+        </v-tab>
+        <v-tab class=" white--text" @click="changePath('/Contact')">
+          Contacts
+        </v-tab>
       </v-tabs>
-  </div>
+    </v-col>
+    <v-col cols="3" lg="3" md="3" sm="3">
+      <button id="donatebtn">Donate</button>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
 export default {
-  name: 'toolbar',
-  data () {
+  name: "toolbar",
+  data() {
     return {
       currentTab: null,
       aboutItems: ["FIRST", "Team 7636", "Outreach", "Leader", "Mentor"],
       eventItems: ["news", "past-seasons"],
-    }
+    };
   },
   methods: {
-    changePath(goToPath){
+    changePath(goToPath) {
       this.$router.push(goToPath).catch((error) => {
         if (error.name != "NavigationDuplicated") {
           throw error;
         }
       });
-    }
-  }
-}
+    },
+  },
+};
 </script>
+
+<style scoped lang="scss">
+@import "@/assets/scss/header.scss";
+</style>
