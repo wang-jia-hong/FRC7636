@@ -9,7 +9,7 @@
                 Our Leaders
             </div> 
         </v-img>
-        <div class="pa-10" style="background-color: #fafafa">
+        <div class="box">
             <div class="pa-12 mx-auto">
                 <h1 class="display-2 text-center py-5" style="color: black;">Student Team Leaders</h1>
                 <v-row no-gutters>
@@ -100,14 +100,6 @@ export default {
     })
 }
 </script>
-<style>
-    .title{
-        font-size: 12vmax;
-        font-weight: bold;
-        color: black;
-    }
-    .content{
-        font-size: 4vmin;
-        color: black;
-    }
+<style scoped lang="scss">
+@import "@/assets/scss/about.scss";
 </style>

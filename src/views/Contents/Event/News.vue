@@ -11,8 +11,7 @@
         </v-img>
         
         <div
-            class="pa-10"
-            style="background-color: #fafafa"
+            class="box"
         >
             <div v-for="(topic, index) in topics" :key="index">
                 <h1 style="font-style: italic;"> {{ topic.name }} </h1>
@@ -82,12 +81,6 @@ export default {
 }
 </script>
 
-<style>
-.contentSize {
-    font-size: 4vmin;
-}
-.titleSize {
-    font-size: 8vmin;
-    font-weight: bold;
-}
+<style scoped lang="scss">
+@import "@/assets/scss/event.scss";
 </style>

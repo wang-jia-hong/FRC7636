@@ -11,8 +11,7 @@
         </v-img>
         
         <div
-            class=""
-            style="background-color: #fafafa"
+            class="box"
         >
                 <div class="pb-12 pt-12 pa-8">
                     <div class="pa-6 mx-auto" height="220" style="width: 95%;">
@@ -225,24 +224,7 @@ export default {
     },
 }
 </script>
-<style>
 
-.contentSize {
-    color: black;
-    font-size: 4vmin;
-}
-.titleSize {
-    color: black;
-    font-size: 8vmin;
-    font-weight: bold;
-}
-
-.blockColor1{
-    background-color: #1179d9
-}
-
-.blockColor2{
-    background-color: #132473
-}
-
+<style scoped lang="scss">
+@import "@/assets/scss/home.scss";
 </style>

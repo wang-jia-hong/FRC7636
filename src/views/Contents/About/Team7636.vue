@@ -13,7 +13,7 @@
         </v-img>
 
         <div class="pa-10" style="background-color: #d5d5d5;">
-            <div class="pa-6 descript text-center">
+            <div class="pa-6 description text-center">
                 #7636 Robomania, standing for the enthusiastic students who have a passionate spirit
                 about robot and indicates we’ll never give up changing the world.     
             </div>
@@ -34,7 +34,7 @@
         >
         </v-img>
 
-        <div class="pa-10" style="background-color: #fafafa">
+        <div class="box">
             <div v-for="(item, index) in items" :key="index">
                 <div class="pa-6">
                     <v-row>
@@ -103,18 +103,6 @@ export default {
 }
 </script>
 
-<style>
-
-.contentSize {
-    color: black;
-    font-size: 2vmin;
-}
-
-.descript {
-    font-size: 5vmin;
-    color: black;
-    font-weight: bold; 
-    font-style: italic;
-}
-
+<style scoped lang="scss">
+@import "@/assets/scss/about.scss";
 </style>

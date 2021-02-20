@@ -12,8 +12,7 @@
         </v-img>
         
         <div
-          class="pa-10"
-          style="background-color: #fafafa"
+          class="box"
         >
           <div class="inside">
             <div v-for="(season, index) in seasons" :key="index">
@@ -90,16 +89,6 @@ export default {
 }
 </script>
 
-<style>
-.inside {
-    background-color: #a3a3a3;
-    width: 100%;    
-}
-.contentSize {
-    font-size: 4vmin;
-}
-.titleSize {
-    font-size: 8vmin;
-    font-weight: bold;
-}
+<style scoped lang="scss">
+@import "@/assets/scss/event.scss";
 </style>

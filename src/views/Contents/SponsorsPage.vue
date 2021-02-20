@@ -5,12 +5,12 @@
         src="@/assets/Elements/FrontIMG/Sponsor header.jpg"
         class="align-center"
         >
-            <div class="text-center" style="color: white; font-size: 6vmin; font-weight: bold;">
+            <div class="textInImg">
                 Sponsors
             </div>
         </v-img>
 
-        <div class="pa-10" style="background-color: #fafafa">
+        <div class="box">
             <div>
                 <v-row class="justify-center align-center">
                     <v-col
@@ -21,7 +21,7 @@
                      v-for="(sponsor, index) in sponsors" :key="index"
                     >
                         <a :href="sponsor.path">
-                            <img :src="sponsor.logo" style="width: 40%;">
+                            <img :src="sponsor.logo" class="sponsorsLogo">
                         </a>
                     </v-col>
                 </v-row>
@@ -75,6 +75,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+@import "@/assets/scss/sponsors.scss";
 </style>
