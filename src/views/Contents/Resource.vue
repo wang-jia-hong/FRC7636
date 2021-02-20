@@ -17,10 +17,7 @@
                     :key="index"
                     style="background: #a3a3a3; color: white"
                 >
-                    <v-expansion-panel-header>{{resource.name}}</v-expansion-panel-header>
-                    <v-btn :href="icon.path" target="_blank" icon>
-                        Grabcad
-                    </v-btn>
+                    <v-expansion-panel-header :href="resource.path">{{resource.name}}</v-expansion-panel-header>
                 </v-expansion-panel>
                 </v-expansion-panels>
             </v-row>
