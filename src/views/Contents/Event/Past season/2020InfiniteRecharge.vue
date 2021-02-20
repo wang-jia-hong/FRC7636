@@ -12,8 +12,7 @@
         ></iframe>
 
         <div 
-         class="pa-10"
-         style="background-color: #fafafa"
+         class="box"
         >
             <div style="background-color: #a3a3a3">
                 <div class="pa-6 mx-auto" height="220">
@@ -76,12 +75,7 @@ components: {
 }
 }
 </script>
-<style>
-.contentSize {
-    font-size: 4vmin;
-}
-.titleSize {
-    font-size: 8vmin;
-    font-weight: bold;
-}
+
+<style scoped lang="scss">
+@import "@/assets/scss/event.scss";
 </style>

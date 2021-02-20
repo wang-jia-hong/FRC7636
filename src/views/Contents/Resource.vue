@@ -9,7 +9,7 @@
                 Resource            
             </h1>
         </v-img>
-        <div class="py-10" style="background-color: #fafafa">
+        <div class="box">
             <v-row justify="center">
                 <v-expansion-panels inset focusable>
                 <v-expansion-panel
@@ -48,3 +48,6 @@ export default {
     }),
 }
 </script>
+<style scoped lang="scss">
+@import "@/assets/scss/resource.scss";
+</style>

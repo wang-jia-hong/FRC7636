@@ -5,7 +5,7 @@
         src=""
         >
         </v-img>
-        <div class="pa-10" style="background-color: #fafafa">
+        <div class="box">
             <div style="background-color: #a2a2a2" class="mx-auto">
                 Outreach
             </div>
@@ -18,3 +18,6 @@ export default {
     
 }
 </script>
+<style scoped lang="scss">
+@import "@/assets/scss/about.scss";
+</style>

@@ -5,7 +5,7 @@
         src="@/assets/Elements/FrontIMG/MentorLeaderHeader.jpg"
         class="align-center"
         >
-            <div class="text-center" style="color: white; font-size: 8vmin; font-weight: bold;">
+            <div class="fontImg">
                 Our Mentors
             </div>
             
@@ -71,9 +71,6 @@ export default {
 }
 </script>
 
-<style>
-
-.descript {
-    font-size: 5vmin;
-}
+<style scoped lang="scss">
+@import "@/assets/scss/about.scss";
 </style>
