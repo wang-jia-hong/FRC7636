@@ -1,5 +1,15 @@
 @import "@/assets/scss/index.scss";
 
+#footerSponsor {
+    height: auto;
+    width: 100%;
+    background-color: $main-color;
+    
+    .sponsorsLogo {
+        width: 40%;
+    }
+}
+
 #frclogo {
     display: flex;
     justify-content: center;

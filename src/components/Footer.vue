@@ -1,5 +1,19 @@
 <template>
   <v-footer dark padless>
+    <div id="footerSponsor">
+      <v-row class="justify-center align-center">
+        <v-col
+          cols="6"
+          class="text-center pt-10 my-8 pa-6"
+          v-for="(sponsor, index) in sponsors"
+          :key="index"
+        >
+          <a :href="sponsor.path">
+            <img :src="sponsor.logo" class="sponsorsLogo" />
+          </a>
+        </v-col>
+      </v-row>
+    </div>
     <v-row class="mt-5">
       <v-col cols="12" md="3" id="frclogo">
         <img src="../assets/FIRST_logo.png" />
@@ -45,6 +59,20 @@
 <script>
 export default {
   data: () => ({
+    sponsors: [
+      {
+        logo: require("@/assets/Elements/Sponsor/CTSP.png"),
+        path: "https://www.ctsp.gov.tw/chinese/00-Home/home.aspx?v=1",
+      },
+      {
+        logo: require("@/assets/Elements/Sponsor/NEHSCTSP.png"),
+        path: "http://www.nehs.tc.edu.tw/index.php",
+      },
+      {
+        logo: require("@/assets/Elements/Sponsor/NEXCOBOT.png"),
+        path: "http://www.nexcobot.com/",
+      },
+    ],
     icons: [
       {
         title: "mdi-facebook",
