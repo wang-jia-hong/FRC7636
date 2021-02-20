@@ -18,9 +18,9 @@
                     style="background: #a3a3a3; color: white"
                 >
                     <v-expansion-panel-header>{{resource.name}}</v-expansion-panel-header>
-                    <v-expansion-panel-content class="mt-6">
-                        {{resource.content}}
-                    </v-expansion-panel-content>
+                    <v-btn :href="icon.path" target="_blank" icon>
+                        Grabcad
+                    </v-btn>
                 </v-expansion-panel>
                 </v-expansion-panels>
             </v-row>
@@ -35,14 +35,17 @@ export default {
             {
                 name: "Document",
                 content: "Here will have docoment very soon",
+                path: "",
             },
             {
                 name: "CAD",
                 content: "Here will have CAD very soon",
+                path: "https://workbench.grabcad.com/workbench/projects/gcFCUvE30irQJF9zINyaG700-59XvjSlETyPKP0pXtyOKE#/space/gca7Hg4kUZGLPHRQUQ4WU5RoRx2ANhhlRO8Qvgbf4TVt9q",
             },
             {
                 name: "Video",
                 content: "Here will have video very soon",
+                path: "",
             },
         ]
     }),
