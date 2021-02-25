@@ -20,3 +20,4 @@ git commit -m 'deploy'
 git push -f https://github.com/FRC7636Robomania/FRC7636.git master:gh-pages
 
 cd -
+read -n 1 -p "Press any key to continue..."

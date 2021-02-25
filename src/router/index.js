@@ -12,13 +12,15 @@ import Mentor from '../views/Contents/About/Mentor.vue'
 import News from '../views/Contents/Event/News.vue'
 import Past from '../views/Contents/Event/PastSeason.vue'
 import DeepSpace from '../views/Contents/Event/Past season/2019DeepSpace.vue'
-import InfiniteRecharge from '../views/Contents/Event/Past season/2020InfiniteRecharge.vue'
+import InfiniteRecharge2020 from '../views/Contents/Event/Past season/2020InfiniteRecharge.vue'
+import InfiniteRecharge2021 from '../views/Contents/Event/Past season/2021InfiniteRecharge.vue'
 
 import Resource from '../views/Contents/Resource.vue'
 
 import Sponsor from '../views/Contents/SponsorsPage.vue'
 
 import Contact from '../views/Contents/ContactPage.vue'
+import { component } from 'vue/types/umd'
 
 Vue.use(VueRouter)
 
@@ -71,7 +73,11 @@ const routes = [
   },
   {
     path: '/2020InfiniteRecharge',
-    component: InfiniteRecharge
+    component: InfiniteRecharge2020
+  },
+  {
+    path: '/2021InfiniteRecharge',
+    component: InfiniteRecharge2021
   },
   {
     path: '/News',
