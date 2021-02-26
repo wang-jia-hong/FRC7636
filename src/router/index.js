@@ -20,7 +20,6 @@ import Resource from '../views/Contents/Resource.vue'
 import Sponsor from '../views/Contents/SponsorsPage.vue'
 
 import Contact from '../views/Contents/ContactPage.vue'
-import { component } from 'vue/types/umd'
 
 Vue.use(VueRouter)
 

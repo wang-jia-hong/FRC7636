@@ -43,12 +43,12 @@ export default {
         resources:[
             {
                 name: "Document",
-                content: "Here will have docoment very soon",
-                path: "",
+                content: "FRC7636 SYZYGY 5.0 (2020-2021)",
+                path: "https://github.com/FRC7636Robomania/Hello2021",
             },
             {
                 name: "CAD",
-                content: "Here will have CAD very soon",
+                content: "FRC7636 SYZYGY 5.0 (2020-2021)",
                 path: "https://workbench.grabcad.com/workbench/projects/gcFCUvE30irQJF9zINyaG700-59XvjSlETyPKP0pXtyOKE#/space/gca7Hg4kUZGLPHRQUQ4WU5RoRx2ANhhlRO8Qvgbf4TVt9q",
             },
             {
