@@ -59,7 +59,7 @@
                         <v-row no-gutters style="height:100%">
                             <v-col
                                 cols="6"
-                                style="font-size:4vmin;"
+                                style="font-size:4vmin; height:50%"
                                 class="align-center justify-center d-flex"
                                 v-for="(block, index) in blocks"
                                 :key="index"

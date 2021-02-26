@@ -51,6 +51,12 @@ export default {
       seasons:[
         {
           photo: require("../../../assets/Elements/Everywhere-2020 Infinite Recharge.png"),
+          title: "FRC 2021: Infinite Recharge",
+          text: "Powered by the great sponsorer, STAR WARS, our mission this year is to protect the FIRST city from being attacked. We use limited resources to built our second robot. We aim to strike both Science Park Taiwan Regional and Silicon Valley Regional and go to our final goal, Detroit Championship. We are confidential that we will do a lot better this season.",
+          path: "/2020InfiniteRecharge",
+        },
+        {
+          photo: require("../../../assets/Elements/Everywhere-2020 Infinite Recharge.png"),
           title: "FRC 2020: Infinite Recharge",
           text: "Powered by the great sponsorer, STAR WARS, our mission this year is to protect the FIRST city from being attacked. We use limited resources to built our second robot. We aim to strike both Science Park Taiwan Regional and Silicon Valley Regional and go to our final goal, Detroit Championship. We are confidential that we will do a lot better this season.",
           path: "/2020InfiniteRecharge",

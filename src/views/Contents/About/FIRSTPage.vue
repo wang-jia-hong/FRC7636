@@ -12,21 +12,23 @@
 
     <div class="box">
       <div class="inside">
-        <div class="pa-6 mx-auto contentSize" height="220">
+        <div class="pa-6 mx-auto contentSize" height="220" style="font-size:3vmin;">
           {{ firstContent }}
         </div>
       </div>
       <div class="d-flex">
         <v-row>
           <v-col cols="12" sm="5" md="3" class="text-center my-auto">
-            <img
-              class="pt-12 pa-5"
-              style="width:100%;"
-              src="@/assets/Elements/About/About - FIRSTfirstdown.png"
-            />
+            <a href="https://www.firstinspires.org/robotics/frc">
+              <img
+                  class="pt-12 pa-5"
+                  style="width:100%;"
+                  src="@/assets/Elements/About/About - FIRSTfirstdown.png"
+              />
+            </a>
           </v-col>
           <v-col cols="12" sm="7" md="9" class="pt-10">
-            <div class="inside pa-6 contentSize">{{ secondContent }}</div>
+            <div class="inside pa-6 contentSize" style="font-size:3vmin;">{{ secondContent }}</div>
           </v-col>
         </v-row>
       </div>

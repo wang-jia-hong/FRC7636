@@ -2,7 +2,9 @@
   <div id="header">
     <v-row>
       <v-col cols="12" lg="3" md="3" sm="12">
-        <img src="../assets/Logo7636.jpg" height="100" />
+        <div @click="changePath('/home')">
+          <img src="../assets/Logo7636.jpg" height="120" />
+        </div>
       </v-col>
       <v-col class="ma-auto">
         <div cols="12" lg="9" md="9" sm="12" class="display-2">
