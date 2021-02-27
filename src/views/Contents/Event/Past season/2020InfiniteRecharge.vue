@@ -36,9 +36,15 @@
                 </div>
             </div>
             <v-card-text>
-                <carousel-3d>      
-                    <slide v-for="i in 5" :index="i" :key="i">
-                        <span></span>
+                <carousel-3d
+                 :autoplay="true"
+                 :autoplay-timeout="5000"        
+                >      
+                    <slide v-for="(image, index) in images"
+                     :index="index"
+                     :key="index"
+                    >
+                        <img :src="image.path" style="">
                     </slide>
                 </carousel-3d>
             </v-card-text>
@@ -64,11 +70,26 @@ computed: {
       }
     },
   },
-data (){
-    return{
-        slides: 5,    
-    }
-},
+data:()=>({
+        images:[
+            {
+                path: require("@/assets/2020-2021/event/2020/1.jpg"),
+            },
+            {
+                path: require("@/assets/2020-2021/event/2020/2.jpg"),
+            },
+            {
+                path: require("@/assets/2020-2021/event/2020/3.jpg"),
+            },
+            {
+                path: require("@/assets/2020-2021/event/2020/4.jpg"),
+            },
+            {
+                path: require("@/assets/2020-2021/event/2020/5.jpg"),
+            },
+            
+        ]
+    }),
 components: {
     Carousel3d,
     Slide

@@ -9,7 +9,11 @@
           :key="index"
         >
           <a :href="sponsor.path">
-            <img :src="sponsor.logo" class="sponsorsLogo" />
+            <img 
+              :src="sponsor.logo"
+              class="sponsorsLogo"
+              style="height: 15%; width: 15%"
+            />
           </a>
         </v-col>
       </v-row>
