@@ -1,47 +1,46 @@
 
 <template>
     <div>
-        <v-img
-            aspect-ratio="2"
-            src="@/assets/Elements/FrontIMG/Events-Past seasons.jpg"
-            class="d-flex align-end"
-        >
-        <h1 class="ml-3 mb-2" style="font-style: italic; font-size: 7vmin;">
-            FRC<br/> Past Seasons            
-        </h1>
-        </v-img>
-        
-        <div
-          class="box"
-        >
-          <div class="inside">
-            <div v-for="(season, index) in seasons" :key="index">
-              <div class="pa-6 mx-auto" height="220">
-                <v-hover v-slot:default="{ hover }">
-                  <v-row @click="changePath(season.path)" :class="`elevation-${hover ? 20 : 0}`">
-                      <v-col
-                          cols="12"
-                          md="4"
-                          class="text-center my-auto"
-                      >
-                          <img :src="season.photo" style="width: 80%">
-                      </v-col>
-                      <v-col order="2">
-                          <div class="mb-2 titleSize">
-                              {{ season.title }}
-                          </div>
-                          <div class="contentSize">
-                              {{ season.text }}
-                          </div>
-                      </v-col>
-                  </v-row>                  
-                </v-hover>
-
-              </div>
+      <v-img
+          aspect-ratio="2"
+          src="@/assets/Elements/FrontIMG/Events-Past seasons.jpg"
+          class="d-flex align-end"
+      >
+      <h1 class="ml-3 mb-2" style="font-style: italic; font-size: 7vmin;">
+          FRC<br/> Past Seasons            
+      </h1>
+      </v-img>
+      
+      <div
+        class="box"
+      >
+        <div class="inside">
+          <div v-for="(season, index) in seasons" :key="index">
+            <div class="pa-6 mx-auto" height="220">
+              <v-hover v-slot:default="{ hover }">
+                <v-row @click="changePath(season.path)" :class="`elevation-${hover ? 20 : 0}`">
+                    <v-col
+                        cols="12"
+                        md="4"
+                        class="text-center my-auto"
+                    >
+                        <img :src="season.photo" style="width: 80%">
+                    </v-col>
+                    <v-col order="2">
+                        <div class="mb-2 titleSize">
+                            {{ season.title }}
+                        </div>
+                        <div class="contentSize">
+                            {{ season.text }}
+                        </div>
+                    </v-col>
+                </v-row>                  
+              </v-hover>
+            </div>
               <hr v-if="index != 1" color="#3b3b3b" class="mx-auto my-3" style="max-width: 80%">
             </div>
-          </div>
         </div>
+      </div>
     </div>
 </template>
 
