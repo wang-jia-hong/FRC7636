@@ -49,7 +49,7 @@
                         </v-col>
 
                         <v-col order="2">
-                            <div class="contentSize">
+                            <div class="contentSize" style="font-size:3vmin;">
                                 {{ item.content }}
                             </div>
                         </v-col>

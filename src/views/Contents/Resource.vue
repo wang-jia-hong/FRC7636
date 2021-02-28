@@ -42,7 +42,7 @@ export default {
     data: ()=> ({
         resources:[
             {
-                name: "Document",
+                name: "Program",
                 content: "FRC7636 SYZYGY 5.0 (2020-2021)",
                 path: "https://github.com/FRC7636Robomania/Hello2021",
             },

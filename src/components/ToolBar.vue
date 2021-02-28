@@ -72,8 +72,8 @@ export default {
   data() {
     return {
       currentTab: null,
-      aboutItems: ["FIRST", "Team 7636", "Outreach", "Leader", "Mentor"],
-      eventItems: ["news", "past-seasons"],
+      aboutItems: ["FIRST", "Team 7636", "Leader", "Mentor"],
+      eventItems: ["News", "Outreach", "Past-seasons"],
     };
   },
   methods: {

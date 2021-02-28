@@ -37,7 +37,7 @@
                 </v-row>                  
               </v-hover>
             </div>
-              <hr v-if="index != 1" color="#3b3b3b" class="mx-auto my-3" style="max-width: 80%">
+              <hr color="#3b3b3b" class="mx-auto my-3" style="max-width: 80%">
             </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ export default {
           photo: require("../../../assets/Elements/Everywhere-2020 Infinite Recharge.png"),
           title: "FRC 2021: Infinite Recharge",
           text: "Powered by the great sponsorer, STAR WARS, our mission this year is to protect the FIRST city from being attacked. We use limited resources to built our second robot. We aim to strike both Science Park Taiwan Regional and Silicon Valley Regional and go to our final goal, Detroit Championship. We are confidential that we will do a lot better this season.",
-          path: "/2020InfiniteRecharge",
+          path: "/2021InfiniteRecharge",
         },
         {
           photo: require("../../../assets/Elements/Everywhere-2020 Infinite Recharge.png"),

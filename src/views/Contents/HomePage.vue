@@ -43,7 +43,7 @@
                     <v-col
                      cols="5"
                      class="d-flex align-center justify-center pa-12 "
-                     style="background-color: #004eb3; height:90%;"
+                     style="background-color: #004eb3; height:100%;"
                     >
                         <div class="text-center" style="font-size:5vmin;">
                             NEHS @ CTSP<br>
@@ -56,10 +56,10 @@
                      cols="7"
                      style="height:100%"
                     >
-                        <v-row no-gutters style="height:90%">
+                        <v-row no-gutters style="height:100%">
                             <v-col
                                 cols="6"
-                                style="font-size:4vmin; height:45%;"
+                                style="font-size:4vmin; height:50%;"
                                 class="align-center justify-center d-flex"
                                 v-for="(block, index) in blocks"
                                 :key="index"
@@ -148,7 +148,7 @@ export default {
                 color: "blockColor2",
             },
             {
-                content1: "2",
+                content1: "3",
                 content2: "Years Participants",
                 color: "blockColor2",
             },
