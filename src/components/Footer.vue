@@ -91,6 +91,10 @@ export default {
         path: "https://www.instagram.com/frc7636_robomania/",
       },
       {
+        title: "mdi-twitch",
+        path: "https://www.twitch.tv/frc7636robomania"
+      },
+      {
         title: "mdi-email",
         path: "",
       },

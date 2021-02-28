@@ -16,8 +16,8 @@
                 <h1 class="display-2 text-center py-5" style="color: black;">Student Team Leaders</h1>
                 <v-row 
                  no-gutters
-                 v-for="(year) in yearsReverse"
-                 :key="year"
+                 v-for="(year, key) in years"
+                 :key="key"
                 >
                     <v-col 
                      lg="6"
@@ -62,17 +62,17 @@ export default {
                     {
                         title: "CHIEF EXECUTIVE OFFICER",
                         name: "Shih-Chih YANG", 
-                        email: "benson200338#gmail.com",
+                        email: "sandra921120@gmail.com",
                     },
                     {
                         title: "LEADER OF MECHANISM",
                         name: "Yu-Fan LIU", 
-                        email: "h710096@nehs.tc.edu.tw",
+                        email: "evon40520@gmail.com",
                     },
                     {
                         title: "CO-LEADER OF MECHANISM",
                         name: "Yi-Jie LIN", 
-                        email: "bananaaa0203@gmail.com",
+                        email: "jimlin507@gmail.com",
                     },
                     {
                         title: "LEADER OF E.E. & PROGRAM",
@@ -82,27 +82,22 @@ export default {
                     {
                         title: "CO-LEADER OF E.E. & PROGRAM",
                         name: "Chia-Chung WU", 
-                        email: "h710092@nehs.tc.edu.tw",
+                        email: "jonathanwu9377@gmail.com",
                     },
                     {
                         title: "LEADER OF STRATEGY & SCOUTING",
                         name: "Chih-Chieh ZHANG", 
-                        email: "h710061@nehs.tc.edu.tw",
+                        email: "zzhijie25@gmail.com",
                     },
                     {
                         title: "CO-LEADER OF STRATEGY & SCOUTING",
                         name: "Yi-Hsuan HUNG", 
-                        email: "h710123@nehs.tc.edu.tw",
+                        email: "m40133246856856@gmail.com",
                     },
                     {
                         title: "MANAGER OF GENERAL AFFAIRS",
                         name: "Pin-Ling HUANG", 
-                        email: "h710107@nehs.tc.edu.tw",
-                    },
-                    {
-                        title: "CO-MANAGER OF GENERAL AFFAIRS",
-                        name: "Sen-Huei TONG", 
-                        email: "h710028@nehs.tc.edu.tw",
+                        email: "pinling817@gmail.com",
                     },
                 ],
                 2019: [
@@ -160,10 +155,10 @@ export default {
             }
     }),
     computed: {
-                yearsReverse() {
-                    return this.years.reverse();
-                }
-            }
+      reverse () {
+        return years.reverse();
+      },
+    },
 }
 </script>
 <style scoped lang="scss">
