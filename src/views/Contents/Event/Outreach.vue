@@ -48,7 +48,7 @@ export default {
   data: ()=> ({
       events:[
         {
-          photo: require(""),
+          
           title: "8/23 Communicate with team 7130",
           text: "During the summer vacation, team7130 invited us and team 6998 for technical exchanges and sharing. We briefly introduced our respective teams and exchanged each other's future plans.",
           path: "/Communicate with team 7130",
