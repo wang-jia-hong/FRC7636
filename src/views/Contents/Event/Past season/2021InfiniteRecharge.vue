@@ -36,6 +36,7 @@
                     </v-row>                    
                 </div>
             </div>
+            
             <v-card-text>
                 <carousel-3d>      
                     <slide v-for="i in 5" :index="i" :key="i">

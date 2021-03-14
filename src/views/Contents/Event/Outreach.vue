@@ -18,7 +18,7 @@
           <div v-for="(event, index) in events" :key="index">
             <div class="pa-6 mx-auto" height="220">
               <v-hover v-slot:default="{ hover }">
-                <v-row @click="changePath(event.path)" :class="`elevation-${hover ? 20 : 0}`">
+                <v-row :class="`elevation-${hover ? 20 : 0}`">
                     <v-col
                         cols="12"
                         md="4"
