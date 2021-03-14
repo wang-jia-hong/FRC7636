@@ -13,7 +13,7 @@
         <div class="pa-10" style="background-color: #d5d5d5;">
             <div class="descript text-center" style="color: black;">
                 No words can describe things our mentor did for us. <br>
-                We couldn’t express more how thankful we are to their kndness help            
+                We couldn’t express more how thankful we are to their kindness help            
             </div>
 
         </div>

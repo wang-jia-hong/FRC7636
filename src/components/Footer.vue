@@ -31,7 +31,7 @@
         :key="`footer-${index}`"
       >
         <div class="title">{{ item.title }}</div>
-        <hr />
+        <hr>
         <div
           v-for="(link, index) in item.links"
           class="title"
@@ -65,16 +65,12 @@ export default {
   data: () => ({
     sponsors: [
       {
-        logo: require("@/assets/Elements/Sponsor/CTSP.png"),
+        logo: require("@/assets/Elements/Sponsor/white/CTSP.png"),
         path: "https://www.ctsp.gov.tw/chinese/00-Home/home.aspx?v=1",
       },
       {
         logo: require("@/assets/Elements/Sponsor/NEHSCTSP.png"),
         path: "http://www.nehs.tc.edu.tw/index.php",
-      },
-      {
-        logo: require("@/assets/Elements/Sponsor/NEXCOBOT.png"),
-        path: "http://www.nexcobot.com/",
       },
     ],
     icons: [

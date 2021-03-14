@@ -51,7 +51,7 @@ export default {
         {
           photo: require("../../../assets/Elements/Everywhere-2020 Infinite Recharge.png"),
           title: "FRC 2021: Infinite Recharge",
-          text: "Powered by the great sponsorer, STAR WARS, our mission this year is to protect the FIRST city from being attacked. We use limited resources to built our second robot. We aim to strike both Science Park Taiwan Regional and Silicon Valley Regional and go to our final goal, Detroit Championship. We are confidential that we will do a lot better this season.",
+          text: "Powered by the great sponsorer, STAR WARS, our mission this year is the same as the mission last year, because of the epidemic, we get the similar seasons. We have more time to perfect our robot. If there is any opportunity to participate in the competition, we will do our best to fight for. No matter what, we will continue to work hard so that the team can take good hold of opportunities when we enconter opportunities.",
           path: "/2021InfiniteRecharge",
         },
         {

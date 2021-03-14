@@ -6,19 +6,24 @@
             class="align-center"
             >
             <div class="text-center" style="color: white; font-size: 8vmin; font-weight: bold;">
-                Our Leaders
+                Student Team Leaders
             </div> 
         </v-img>
         <div class="box">
             <div 
                 class="pa-12 mx-auto" 
             >
-                <h1 class="display-2 text-center py-5" style="color: black;">Student Team Leaders</h1>
                 <v-row 
                  no-gutters
-                 v-for="(year, key) in years"
-                 :key="key"
+                 v-for="(year, index) in years"
+                 :key="index"
                 >
+                    <div style="width:100%;">
+                        <div class="text-center" style="color: black; font-size: 6vmin; font-weight: bold;">
+                            {{index}}
+                        </div> 
+                        <hr style="width:90%;" color="#000" class="mx-auto mb-2">
+                    </div>
                     <v-col 
                      lg="6"
                      md="6"
@@ -52,8 +57,8 @@
 export default {
     data: ()=> ({
         years:
-            {
-                2020: [
+            { 
+                "Leaders(2020-2021)": [
                     {
                         title: "TEAM LEADER",
                         name: "Ting-YU HUANG", 
@@ -99,8 +104,13 @@ export default {
                         name: "Pin-Ling HUANG", 
                         email: "pinling817@gmail.com",
                     },
+                    {
+                        title: "CO-MANAGER OF GENERAL AFFAIRS",
+                        name: "", 
+                        email: "",
+                    },
                 ],
-                2019: [
+                "Leaders(2019-2020)": [
                     {
                         title: "TEAM LEADER",
                         name: "Tung-Lun YANG", 
@@ -151,14 +161,11 @@ export default {
                         name: "Sen-Huei TONG", 
                         email: "h710028@nehs.tc.edu.tw",
                     },
-                ]
+                ],
+                
             }
     }),
-    computed: {
-      reverse () {
-        return years.reverse();
-      },
-    },
+   
 }
 </script>
 <style scoped lang="scss">
