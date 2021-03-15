@@ -1,4 +1,3 @@
-
 <template>
     <div>
       <v-img
@@ -6,9 +5,9 @@
           src="@/assets/2020-2021/outreach/outreach_main.jpg"
           class="d-flex align-end"
       >
-      <h1 class="ml-3 mb-2" style="font-style: italic; font-size: 7vmin;">
-          Outreach            
-      </h1>
+        <h1 class="ml-3 mb-2" style="font-style: italic; font-size: 7vmin;">
+            Outreach            
+        </h1>
       </v-img>
       
       <div class="box">
@@ -20,10 +19,8 @@
 </template>
 
 <script>
+import Timeline from 'timeline-vuejs'
 export default {
-  components: {
-    Timeline
-  },
   data: () => ({
     messageWhenNoItems: 'There will be some item!',
     timelineItems: [
@@ -53,6 +50,9 @@ export default {
         case 'xl': return 3
       }
     },
+  },
+  components: {
+    Timeline
   },
   methods: {
     changePath(goToPath){
