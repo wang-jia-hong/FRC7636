@@ -11,49 +11,60 @@
       </h1>
       </v-img>
       
-      <div
-        class="box"
-      >
-        <div class="inside">
-          <div v-for="(event, index) in events" :key="index">
-            <div class="pa-6 mx-auto" height="220">
-              <v-hover v-slot:default="{ hover }">
-                <v-row :class="`elevation-${hover ? 20 : 0}`">
-                    <v-col
-                        cols="12"
-                        md="4"
-                        class="text-center my-auto"
-                    >
-                    </v-col>
-                    <v-col order="2">
-                        <div class="mb-2 titleSize">
-                            {{ event.title }}
-                        </div>
-                        <div class="contentSize">
-                            {{ event.text }}
-                        </div>
-                    </v-col>
-                </v-row>                  
-              </v-hover>
-            </div>
-              <hr color="#3b3b3b" class="mx-auto my-3" style="max-width: 80%">
+      <div class="box">
+            <div v-for="(event, index) in events" :key="index">
+                <div class="pa-6">
+                    <v-row>
+                        <v-col
+                            :order="imageHeight"
+                            v-if="index % 2 == 0"
+                            cols="12"
+                            md="4"
+                            class="text-center my-auto"
+                        >
+                            <img :src="item.imgPath" style="width: 95%; background-color:black;">
+                        </v-col>
+
+                        <v-col order="2">
+                            <div class="contentSize" style="font-size:3vmin;">
+                                {{ item.content }}
+                            </div>
+                        </v-col>
+                        <v-col
+                            v-if="index % 2 == 1"
+                            cols="12"
+                            md="4"
+                            class="text-center my-auto"
+                        >
+                            <img :src="item.imgPath" style=" width: 95%;">
+                        </v-col>                        
+                    </v-row>
+                </div>                                     
             </div>
         </div>
-      </div>
     </div>
 </template>
 
 <script>
 export default {
   data: ()=> ({
-      events:[
-        {
-          
-          title: "8/23 Communicate with team 7130",
-          text: "During the summer vacation, team7130 invited us and team 6998 for technical exchanges and sharing. We briefly introduced our respective teams and exchanged each other's future plans.",
-          path: "/Communicate with team 7130",
-        },
-      ]
+            events:
+            { 
+                "": [
+                    
+                ],
+                "8/23 Communicate with team 7130": [
+                    {
+                      photo: require(""),
+                      text: ""
+                    },
+                    {
+
+                    },
+                ],
+                
+            },
+      
   }),
   computed: {
     // eslint-disable-next-line vue/return-in-computed-property

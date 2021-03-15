@@ -10,6 +10,7 @@
   "dependencies": {
     "prerender": "^5.8.0",
     "scss": "^0.2.4",
+    "timeline-vuejs": "^1.1.7",
     "vue": "^2.6.12",
     "vue-carousel-3d": "^0.2.0",
     "vue-cli": "^2.9.6",

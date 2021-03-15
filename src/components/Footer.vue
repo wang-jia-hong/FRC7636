@@ -65,7 +65,7 @@ export default {
   data: () => ({
     sponsors: [
       {
-        logo: require("@/assets/Elements/Sponsor/white/CTSP.png"),
+        logo: require("@/assets/Elements/Sponsor/CTSP.png"),
         path: "https://www.ctsp.gov.tw/chinese/00-Home/home.aspx?v=1",
       },
       {
