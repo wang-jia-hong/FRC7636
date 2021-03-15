@@ -8,6 +8,7 @@ import Team from '../views/Contents/About/Team7636.vue'
 import Outreach from '../views/Contents/About/Outreach.vue'
 import Leader from '../views/Contents/About/LeaderPage.vue'
 import Mentor from '../views/Contents/About/Mentor.vue'
+import Robots from '../views/Contents/About/Robots.vue'
 
 import News from '../views/Contents/Event/News.vue'
 import Past from '../views/Contents/Event/PastSeason.vue'
@@ -56,6 +57,10 @@ const routes = [
   {
     path: '/Mentor',
     component: Mentor
+  },
+  {
+    path: '/Robots',
+    component: Robots
   },
   {
     path: '/news',
