@@ -12,59 +12,33 @@
       </v-img>
       
       <div class="box">
-            <div v-for="(event, index) in events" :key="index">
-                <div class="pa-6">
-                    <v-row>
-                        <v-col
-                            :order="imageHeight"
-                            v-if="index % 2 == 0"
-                            cols="12"
-                            md="4"
-                            class="text-center my-auto"
-                        >
-                            <img :src="item.imgPath" style="width: 95%; background-color:black;">
-                        </v-col>
-
-                        <v-col order="2">
-                            <div class="contentSize" style="font-size:3vmin;">
-                                {{ item.content }}
-                            </div>
-                        </v-col>
-                        <v-col
-                            v-if="index % 2 == 1"
-                            cols="12"
-                            md="4"
-                            class="text-center my-auto"
-                        >
-                            <img :src="item.imgPath" style=" width: 95%;">
-                        </v-col>                        
-                    </v-row>
-                </div>                                     
-            </div>
-        </div>
+        <Timeline
+          :timeline-items="timelineItems"
+          :message-when-no-items="messageWhenNoItems"/>
+      </div>
     </div>
 </template>
 
 <script>
 export default {
-  data: ()=> ({
-            events:
-            { 
-                "": [
-                    
-                ],
-                "8/23 Communicate with team 7130": [
-                    {
-                      photo: require(""),
-                      text: ""
-                    },
-                    {
-
-                    },
-                ],
-                
-            },
-      
+  components: {
+    Timeline
+  },
+  data: () => ({
+    messageWhenNoItems: 'There will be some item!',
+    timelineItems: [
+      {
+        items: [
+           {
+            from: new Date(2020, 8, 23),
+            title: "Communicate with team 7130",
+            description:
+              "During the summer vacation, team7130 invited us and team 6998 for technical exchanges and sharing. We briefly introduced our respective teams and exchanged each other's future plans.",
+            showDayAndMonth: true
+          },
+        ]
+      }
+    ]
   }),
   computed: {
     // eslint-disable-next-line vue/return-in-computed-property
