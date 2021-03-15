@@ -180,24 +180,24 @@ export default {
         ],
         bottomItems: [
             {
-                photo: require("@/assets/Elements/Everywhere-2019 Deep Space.png"),
-                text: "FRC2019:Deep Space",
-                path: "/2019DeepSpace",
+                photo: require("@/assets/Elements/Everywhere-2020 Infinite Recharge.png"),
+                text: "FRC2021:Infinite Recharge",
+                path: "/2021InfiniteRecharge",
             },
             {
-                photo: require("@/assets/Elements/Home/Charlee's Comets.jpg"),
-                text: "2019 Charlle's Comet",
+                photo: require("@/assets/2020-2021/event/2020/4.jpg"),
+                text: "2021 Syzygy",
                 path: "",
             },
             {
-                photo: require("@/assets/Logo7636.jpg"),
-                text: "About FRC #7636",
-                path: "/Team 7636",
+                photo: require("@/assets/2020-2021/outreach/成果發表/1.jpg"),
+                text: "Outreach",
+                path: "/Outreach",
             },
             {
-                photo: "",
-                text: "Coming up ~~~",
-                path: "",
+                photo: "@/assets/Elements/FrontIMG/About- FIRST pic.jpg",
+                text: "FIRST",
+                path: "/FIRST",
             }
         ],        
     }),
