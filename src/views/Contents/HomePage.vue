@@ -195,7 +195,7 @@ export default {
                 path: "/Outreach",
             },
             {
-                photo: require("@/assets/2020-2021/elements/first_aqu.jpg"),
+                photo: require("@/assets/2020-2021/elements/first_squ.jpg"),
                 text: "FIRST",
                 path: "/FIRST",
             }

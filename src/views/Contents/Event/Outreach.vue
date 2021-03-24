@@ -25,10 +25,11 @@
 import Timeline from "timeline-vuejs";
 export default {
   data: () => ({
+    //Don't know why, the month display will increase one
     messageWhenNoItems: "There are not items",
     timelineItems: [
       {
-        from: new Date(2020, 9, 11),
+        from: new Date(2020, 8, 11), 
         title: "Results presentation",
         showDayAndMonth: true,
         description: 
