@@ -58,7 +58,7 @@ export default {
     data: ()=> ({
         years:
             { 
-                "Leaders(2020-2021)": [
+                "2020-2021": [
                     {
                         title: "TEAM LEADER",
                         name: "Ting-YU HUANG", 
@@ -110,7 +110,7 @@ export default {
                         email: "",
                     },
                 ],
-                "Leaders(2019-2020)": [
+                "2019-2020": [
                     {
                         title: "TEAM LEADER",
                         name: "Tung-Lun YANG", 

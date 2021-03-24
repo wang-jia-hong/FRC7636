@@ -138,7 +138,7 @@ export default {
     data: ()=> ({
         blocks:[
             {
-                content1: "60+",
+                content1: "30+",
                 content2: "Team Members",
                 color: "blockColor1",
             },
@@ -153,7 +153,7 @@ export default {
                 color: "blockColor2",
             },
             {
-                content1: "3",
+                content1: "4",
                 content2: "Regional Competitions",
                 color: "blockColor1",
             },
@@ -166,10 +166,10 @@ export default {
                 path: "/Team 7636",
             },
             {
-                title: "FRC 2021",
+                title: "FRC 2020",
                 content: "We’ve been participating in the Southern Cross Regional Competition located in NSW of Australia in our rookie year, 2019. We’ve gained a lot through the pass season. Our robot, Charlie’s Comet, had been upgraded and improved through the CTSP Pre-competition and the CTSP off season competition.",
                 imgPath: require("@/assets/Elements/Home/IMG_8742.jpg"),
-                path: "/2019DeepSpace",
+                path: "/2020InfiniteRecharge",
             },
             {
                 title: "Outreach",
@@ -185,17 +185,17 @@ export default {
                 path: "/2021InfiniteRecharge",
             },
             {
-                photo: require("@/assets/2020-2021/event/2020/4.jpg"),
+                photo: require("@/assets/2020-2021/elements/robot_squ.jpg"),
                 text: "2021 Syzygy",
                 path: "",
             },
             {
-                photo: require("@/assets/2020-2021/outreach/成果發表/1.jpg"),
+                photo: require("@/assets/2020-2021/elements/outreach_squ.jpg"),
                 text: "Outreach",
                 path: "/Outreach",
             },
             {
-                photo: "@/assets/Elements/FrontIMG/About- FIRST pic.jpg",
+                photo: require("@/assets/2020-2021/elements/first_aqu.jpg"),
                 text: "FIRST",
                 path: "/FIRST",
             }

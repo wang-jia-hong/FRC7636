@@ -15,6 +15,7 @@
         class="test"
         :timeline-items="timelineItems"
         :message-when-no-items="messageWhenNoItems"
+        :dateLocale="zh-tw"
       />
     </div>
   </div>
@@ -27,17 +28,23 @@ export default {
     messageWhenNoItems: "There are not items",
     timelineItems: [
       {
-        from: new Date(2020, 8, 23),
-        title: "Communicate with team 7130",
-        description:
-          "During the summer vacation, team7130 invited us and team 6998 for technical exchanges and sharing. We briefly introduced our respective teams and exchanged each other's future plans.",
+        from: new Date(2020, 9, 11),
+        title: "Results presentation",
+        showDayAndMonth: true,
+        description: 
+          "",
       },
       {
-        from: new Date(2016, 1),
-        title: "Name",
+        from: new Date(2020, 7, 23),
+        title: "Communicate with team 7130",
+        showDayAndMonth: true,
         description:
-          "test123",
+          "During the summer vacation, team7130 invited us and team 6998 for technical exchanges and sharing." +  
+          "We briefly introduced each other's team's team structure, responsible positions and future plans." +
+          "We discussed how each other effectively used limited resources and funds to build a team that can compete with other teams in the world" +
+          "Each team has different characteristics, believe this exchange will let us learn a lot!",
       },
+      
     ],
   }),
 
