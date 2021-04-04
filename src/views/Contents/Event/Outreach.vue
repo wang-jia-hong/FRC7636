@@ -22,6 +22,7 @@
 </template>
 
 <script>
+// const Timeline = require('timeline-vuejs');
 import Timeline from "timeline-vuejs";
 export default {
   data: () => ({

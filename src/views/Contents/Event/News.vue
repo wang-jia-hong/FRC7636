@@ -6,7 +6,7 @@
             class="d-flex align-end"
         >
             <h1 class="ml-3 mb-2" style="font-style: italic; font-size: 7vmin;">
-                News &<br />Upcoming Events            
+                News <br/>Upcoming Events            
             </h1>
         </v-img>
         
