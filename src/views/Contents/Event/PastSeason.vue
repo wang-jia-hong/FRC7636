@@ -49,6 +49,12 @@ export default {
   data: ()=> ({
       seasons:[
         {
+          photo: require("../../../assets/Elements/Everywhere-2022 Rapid React.png"),
+          title: "FRC 2022: Rapid React",
+          text: "From the shipment of packages in rural and urban areas, to disaster relief delivery andhigh-tech air transit, teams will re-imagine faster, more reliable, inclusive, and sustainable transportationinnovations that better connect and grow communities and economies around the world",
+          path: "/2022RapidReact",
+        },
+        {
           photo: require("../../../assets/Elements/Everywhere-2020 Infinite Recharge.png"),
           title: "FRC 2021: Infinite Recharge",
           text: "Powered by the great sponsorer, STAR WARS, our mission this year is the same as the mission last year, because of the epidemic, we get the similar seasons. We have more time to perfect our robot. If there is any opportunity to participate in the competition, we will do our best to fight for. No matter what, we will continue to work hard so that the team can take good hold of opportunities when we enconter opportunities.",

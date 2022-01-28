@@ -1,6 +1,6 @@
 <template>
   <v-row id="bar">
-    <v-col cols="9" lg="10">
+    <v-col cols="12">
       <v-tabs
         v-model="currentTab"
         background-color="#002a5c"
@@ -59,9 +59,6 @@
           Contacts
         </v-tab>
       </v-tabs>
-    </v-col>
-    <v-col cols="3" lg="2">
-      <button id="donatebtn">Donate</button>
     </v-col>
   </v-row>
 </template>

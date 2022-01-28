@@ -7,9 +7,11 @@
         </router-link>
       </v-col>
       <v-col class="ma-auto">
-        <div cols="12" lg="9" md="9" sm="12" class="display-2">
+        <div cols="12" lg="7" md="7" sm="12" class="display-2">
           <strong>FRC #7636 Robomania</strong>
         </div>
+      </v-col>
+      <v-col cols="12" lg="1" md="1" sm="12">
       </v-col>
     </v-row>
     <vue-position-sticky :offsetTop="0">

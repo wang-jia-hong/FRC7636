@@ -17,17 +17,19 @@
         :message-when-no-items="messageWhenNoItems"
         :dateLocale="zh-tw"
       />
+      >
     </div>
   </div>
 </template>
 
 <script>
 // const Timeline = require('timeline-vuejs');
-import Timeline from "timeline-vuejs";
+import Timeline from 'timeline-vuejs';
 export default {
   data: () => ({
     //Don't know why, the month display will increase one
     messageWhenNoItems: "There are not items",
+
     timelineItems: [
       {
         from: new Date(2020, 8, 11), 
@@ -45,6 +47,14 @@ export default {
           "We briefly introduced each other's team's team structure, responsible positions and future plans." +
           "We discussed how each other effectively used limited resources and funds to build a team that can compete with other teams in the world" +
           "Each team has different characteristics, believe this exchange will let us learn a lot!",
+      
+      },
+      {
+        from: new Date(2021, 12, 28),
+        title: '<div><img width=100% src="/assets/Elements/FRC7636 DeepBlueLogo.jpg"></div>Take a large group photo',
+        showDayAndMonth: true,
+        description:
+          "Today we take a large group photo",         
       },
       
     ],

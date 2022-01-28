@@ -1,5 +1,5 @@
 <template>
-<v-app>
+  <v-app>
     
     <v-container class="container">
         <Header></Header>
@@ -13,6 +13,7 @@
 <script>
 import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
+
 export default {
   name: 'App',
   components: {

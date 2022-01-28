@@ -14,6 +14,7 @@ import Outreach from '../views/Contents/Event/Outreach.vue'
 import DeepSpace from '../views/Contents/Event/Past season/2019DeepSpace.vue'
 import InfiniteRecharge2020 from '../views/Contents/Event/Past season/2020InfiniteRecharge.vue'
 import InfiniteRecharge2021 from '../views/Contents/Event/Past season/2021InfiniteRecharge.vue'
+import RapidReact2022 from '../views/Contents/Event/Past season/2022RapidReact.vue'
 
 import Resource from '../views/Contents/Resource.vue'
 
@@ -77,6 +78,10 @@ const routes = [
   {
     path: '/2021InfiniteRecharge',
     component: InfiniteRecharge2021
+  },
+  {
+    path: '/2022RapidReact',
+    component: RapidReact2022
   },
   {
     path: '/News',
