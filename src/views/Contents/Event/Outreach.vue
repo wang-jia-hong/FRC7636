@@ -51,7 +51,7 @@ export default {
       },
       {
         from: new Date(2021, 12, 28),
-        title: '<div><img width=100% src="/assets/Elements/FRC7636 DeepBlueLogo.jpg"></div>Take a large group photo',
+        title: '<div><img width=100% src="http://3.bp.blogspot.com/-CjLXGH5OcEA/Vnahq_QACHI/AAAAAAAAAu8/DHHq4RzlYFQ/s1600/235546ozq3npz5w1353wn8.jpg"></div>Take a large group photo',
         showDayAndMonth: true,
         description:
           "Today we take a large group photo",         
