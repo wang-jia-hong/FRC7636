@@ -1,35 +1,57 @@
 <template>
-  <div id="header">
-    <v-row>
-      <v-col cols="12" lg="3" md="3" sm="12">
-        <router-link to="/home">
-          <img src="../assets/Logo7636.jpg" height="120" />
-        </router-link>
-      </v-col>
-      <v-col class="ma-auto">
-        <div cols="12" lg="7" md="7" sm="12" class="display-2">
-          <strong>FRC #7636 Robomania</strong>
-        </div>
-      </v-col>
-      <v-col cols="12" lg="1" md="1" sm="12">
-      </v-col>
-    </v-row>
-    <vue-position-sticky :offsetTop="0">
-      <v-col class="pt-0">
-        <Toolbar></Toolbar>
-      </v-col>
-    </vue-position-sticky>
+
+  <div id="header">   
+    <div id="header-logo">    
+    
+    </div>
+    
+    <div class="header-button">
+            <v-btn class="black--text" @click="changePath('/')" rounded color="transparent" elevation="0">
+                <a class="black--text">Home</a>
+            </v-btn>
+            <v-btn class="black--text" @click="changePath('/')" rounded color="transparent" elevation="0">
+                <v-menu class="black--text" open-on-hover down offset-y left>
+                    <template v-slot:activator="{ on }">
+                        <div text class="align-self-center" v-on="on">
+                            <a class="black--text">About</a>
+                            <v-icon>mdi-chevron-down</v-icon>
+                        </div>
+                    </template>
+                    <v-list class="menu">
+                    <v-list-item
+                        class="black--text"
+                        v-for="(aboutItem, index) in aboutItems"
+                        :key="index"
+                        @click="changePath(`/${aboutItem}`)"
+                        light
+                    >
+                        <v-list-item-title>{{ aboutItem }}</v-list-item-title>
+                    </v-list-item>
+                    </v-list>
+                </v-menu>
+            </v-btn>
+            </div>
   </div>
 </template>
 
 <script>
-import Toolbar from "./ToolBar.vue";
 
 export default {
-  components: {
-    Toolbar,
+    data: ()=> ({
+        aboutItems: ["FIRST", "Team 7636", "Leader", "Mentor"],
+        eventItems: ["News", "Outreach", "Past-seasons"],
+    }),
+    methods: {
+    changePath(goToPath) {
+      this.$router.push(goToPath).catch((error) => {
+        if (error.name != "NavigationDuplicated") {
+          throw error;
+        }
+      });
+    },
   },
-};
+}
+
 </script>
 
 <style scoped lang="scss">

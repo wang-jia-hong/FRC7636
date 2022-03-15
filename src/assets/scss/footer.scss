@@ -1,20 +1,11 @@
 @import "@/assets/scss/index.scss";
 
-#footerSponsor {
-    height: auto;
-    width: 100%;
-    background-color: $main-color;
-    
-    .sponsorsLogo {
-        width: 40%;
-    }
-}
 
 #frclogo {
     margin: auto;
     text-align: center;
     img {
-        width: 60%;
+        height: 15vh;
     }
 }
 
@@ -26,14 +17,14 @@
 
     .title {
         font-weight: bold;
-        color: white;
+        color: #000000;
     }
 
     hr {
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 4vw;
-        width: 150px;
+        margin-bottom: 1vw;
+        width: 145px;
     }
 
     .no-underline {
@@ -49,4 +40,24 @@
         font-weight: bold;
         margin-bottom: 0px;
     }
+}
+
+.button {
+    color: #000000 !important;
+    margin: 1%;
+}
+
+#footerSponsor {
+    height: auto;
+    width: 100%;
+    background-color: $main-color;
+    margin-bottom: 0;
+}
+
+
+.sponsorsLogo {
+    height: 5vh; 
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }

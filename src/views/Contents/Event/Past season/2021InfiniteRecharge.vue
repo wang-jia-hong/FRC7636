@@ -30,7 +30,11 @@
                                 FRC 2021: Infinite Recharge
                             </div>
                             <div class="contentSize">
-                                As for the theme 2021, in addition to using similar rules from last season, it also add a "Home Challenge". We have to programming to make robot can recognize the position of the powercell on the field to determine the trajectory to suck the powercell. In addition, we have a opportunity to design our own games for FRC, it may become a future season theme. Desipite the severe epidemic in the world, enthusiasm for robot drives us together. In the case of ensuring safety, we do our best to find new ways to participate in this game. FRC#7636, May the force be with all of us.
+                                As for the theme 2021, in addition to using similar rules from last season, it also add a "Home Challenge". 
+                                We have to programming to make robot can recognize the position of the powercell on the field to determine 
+                                the trajectory to suck the powercell. In addition, we have a opportunity to design our own games for FRC, 
+                                it may become a future season theme. Desipite the severe epidemic in the world, enthusiasm for robot drives us together. 
+                                In the case of ensuring safety, we do our best to find new ways to participate in this game. FRC#7636, May the force be with all of us.
                             </div>
                         </v-col>
                     </v-row>                    

@@ -1,5 +1,11 @@
 @import "@/assets/scss/index.scss";
 
+
+
+#outside {
+    background-color: white;
+}
+
 .contentSize {
     color: black;
     font-size: 4vmin;
@@ -16,4 +22,82 @@
 
 .blockColor2{
     background-color: #132473
+}
+
+.homepage-logo {
+    background-color: black;
+    text-align: center;
+
+
+
+    img {
+        width: 90vh;
+        margin: 10vh;
+    }
+}
+
+.home-header {
+    background-color: $main-color;
+    position: fixed;
+    z-index: 10;
+    height: auto;
+    width: 100vw;
+    top: 0;
+    transition: background-color 0.5s ease-in;
+     
+    #header-logo {
+        width: auto;
+        float: left;
+        height: 100%;
+        text-align: center;
+        margin-bottom: 0px !important;
+    }
+    
+    .header-button { 
+        width: auto;
+        float: right;
+        margin-right: 10vw;
+        color: black;
+    }
+    
+}
+
+.spacer {
+    height: 95vh;
+    background-image: url("~@/assets/Logo7636.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: $main-color;
+    background-size: 50vw;
+}
+
+.menu {
+    background-color: $main-color;
+    transition: background-color 0.5s ease-in;
+}
+
+
+.none {
+    
+    background-color:  white;
+    transition: background-color 0.5s ease-in;
+}
+
+.none1 {
+    background-color:  white !important;
+    transition: background-color 0.5s ease-in;
+}
+
+.none2 {
+    color: black !important;
+}
+
+.list-item {
+    color: white;
+}
+
+.btn-text{
+    font-size: 5%;
+    line-height: 36px;
 }

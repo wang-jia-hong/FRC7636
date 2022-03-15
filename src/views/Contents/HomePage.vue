@@ -1,44 +1,110 @@
 <template>
-    <div>
-        <v-img
-            aspect-ratio="2"
-            src="@/assets/Elements/FrontIMG/IMG_9038.jpg"
-            class="d-flex align-end"
-        >
-            <h1 class="ml-8 mb-2"  style="font-style: italic; font-size: 7vmin;">
-                FRC #7636<br />Robomania            
-            </h1>
-        </v-img>
+    <div id="outside">
+    <div id="home">
+        
+        <div class="home-header" :class="{ none: active }">   
+            <div id="header-logo">    
+           
+            </div>
+            
+            <div class="header-button">
+
+                <v-btn class="white--text" @click="changePath('/')" rounded color="transparent" elevation="0">
+                    <a class="white--text btn-text" :class="{ none2: active }">Home</a>
+                </v-btn>
+
+                <v-btn class="white--text" @click="changePath('/')" rounded color="transparent" elevation="0">
+                    <v-menu open-on-hover down offset-y left>
+                        <template v-slot:activator="{ on }">
+                            <div text class="align-self-center" v-on="on">
+                                <a class="white--text btn-text" :class="{ none2: active }">About</a>
+                                <v-icon :class="{ none2: active }">mdi-chevron-down</v-icon>
+                            </div>
+                        </template>
+                        <v-list class="menu" :class="{ none1: active }">
+                        <v-list-item
+                            v-for="(aboutItem, index) in aboutItems"
+                            :key="index"
+                            @click="changePath(`/${aboutItem}`)"
+                        >
+                            <v-list-item-title><a class="list-item white--text" :class="{ none2: active }">{{ aboutItem }}</a></v-list-item-title>
+                        </v-list-item>
+                        </v-list>
+                    </v-menu>
+                </v-btn>
+
+                <v-btn class="white--text" @click="changePath('/')" rounded color="transparent" elevation="0">
+                    <v-menu open-on-hover down offset-y left>
+                        <template v-slot:activator="{ on }">
+                            <div text class="align-self-center" v-on="on">
+                                <a class="white--text btn-text" :class="{ none2: active }">Event</a>
+                                <v-icon :class="{ none2: active }">mdi-chevron-down</v-icon>
+                            </div>
+                        </template>
+                        <v-list class="menu" :class="{ none1: active }">
+                        <v-list-item
+                            v-for="(eventItem, index) in eventItems"
+                            :key="index"
+                            @click="changePath(`/${eventItem}`)"
+                        >
+                            <v-list-item-title><a class="list-item white--text" :class="{ none2: active }">{{ eventItem }}</a></v-list-item-title>
+                        </v-list-item>
+                        </v-list>
+                    </v-menu>
+                </v-btn>
+
+                <v-btn class="white--text" @click="changePath('/resource')" rounded color="transparent" elevation="0">
+                    <a class="white--text btn-text" :class="{ none2: active }">Resource</a>
+                </v-btn>
+
+                <v-btn class="white--text" @click="changePath('/sponsor')" rounded color="transparent" elevation="0">
+                    <a class="white--text btn-text" :class="{ none2: active }">Sponsor</a>
+                </v-btn>
+
+                <v-btn class="white--text" @click="changePath('/Contact')" rounded color="transparent" elevation="0">
+                    <a class="white--text btn-text" :class="{ none2: active }">Contact</a>
+                </v-btn>
+
+            </div>
+        </div>
+      
+        <div class="spacer" >
+            
+        </div>
+
+        
+        
         
         <div
             class="box"
         >
-                <div class="pb-12 pt-12 pa-8">
-                    <div class="pa-6 mx-auto" height="220" style="width: 95%;">
-                        <a href="https://www.frctaichungregional.com.tw/"  style="text-decoration:none; color:white;">
-                            <v-hover v-slot:default="{ hover }">
-                                <v-row :class="`elevation-${hover ? 15 : 0}`">
-                                    <v-col
-                                        cols="12"
-                                        md="4"
-                                        class="text-center my-auto"
-                                    >
-                                        <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 45%">
-                                    </v-col>
-                                    <v-col order="2">
-                                        <div class="mb-2 titleSize">
-                                            NEHS @ CTSP
-                                        </div>
-                                        <div class="contentSize">
-
-                                            FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Taiwan Science Park.
-                                        </div>
-                                    </v-col>
-                                </v-row>                            
-                            </v-hover>                            
-                        </a>
-                    </div>
+            <div class="pb-12 pt-0 pa-8">
+                <div class="pa-6 mx-auto" height="220" style="width: 95%;">
+                    <a href="https://www.frctaichungregional.com.tw/"  style="text-decoration:none; color:white;">
+                        <v-hover v-slot:default="{ hover }">
+                            <v-row :class="`elevation-${hover ? 15 : 0}`">
+                                <v-col
+                                    cols="12"
+                                    md="4"
+                                    class="text-center my-auto"
+                                >
+                                    <img src="@/assets/Elements/Home/Home-CTSP.png" style="width: 45%">
+                                </v-col>
+                                    
+                                <v-col order="2">
+                                    <div class="mb-2 titleSize">
+                                        NEHS @ CTSP
+                                    </div>
+                                     
+                                    <div class="contentSize">
+                                        FRC #7636 Robomania is made up by students studying in National Experiemental High School at Central Taiwan Science Park.
+                                    </div>
+                                </v-col>
+                             </v-row>                            
+                        </v-hover>                            
+                    </a>
                 </div>
+            </div>
                 <v-row no-gutters class="pt-6 pb-6" style="height: 60vh;">
                     <v-col
                      cols="5"
@@ -109,33 +175,43 @@
                         <hr color="#8f8f8f" class="mx-auto my-10" style="max-width: 90%">
                     </div>                
                 </div>
-            <div>
-                <div style="color: black; font-size: 1.1em;" class="pb-12 pa-10 text-center">
-                    <v-row class="pb-12">
-                        <v-col
-                            cols="12"
-                            sm="6"
-                            lg="3"
-                            v-for="(bottomItem, index) in bottomItems"
-                            :key="index"
-                        >
-                            <v-hover v-slot:default="{ hover }">
-                                <div class="text-center pt-6"  :class="`elevation-${hover ? 16 : 0}`" @click="changePath(bottomItem.path)">
-                                    <img :src="bottomItem.photo" style="width: 90%;" class="mx-auto"><br>
-                                    {{ bottomItem.text }}
-                                </div>                                
-                            </v-hover>                               
-                        </v-col>
-                    </v-row>                        
+                <div>
+                    <div style="color: black; font-size: 1.1em;" class="pb-0 pa-10 text-center">
+                        <v-row class="pb-12">
+                            <v-col
+                                cols="12"
+                                sm="6"
+                                lg="3"
+                                v-for="(bottomItem, index) in bottomItems"
+                                :key="index"
+                            >
+                                <v-hover v-slot:default="{ hover }">
+                                    <div class="text-center pt-6"  :class="`elevation-${hover ? 16 : 0}`" @click="changePath(bottomItem.path)">
+                                        <img :src="bottomItem.photo" style="width: 90%;" class="mx-auto"><br>
+                                        {{ bottomItem.text }}
+                                    </div>                                
+                                </v-hover>                               
+                            </v-col>
+                        </v-row>                        
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </template>
 
 <script>
+
 export default {
     data: ()=> ({
+        
+        currentTab: null,
+        aboutItems: ["FIRST", "Team 7636", "Leader", "Mentor"],
+        eventItems: ["News", "Outreach", "Past-seasons"],
+
+        active: false,
+
         blocks:[
             {
                 content1: "30+",
@@ -201,6 +277,7 @@ export default {
             }
         ],        
     }),
+    
     computed: {
       // eslint-disable-next-line vue/return-in-computed-property
       imageHeight () {
@@ -213,16 +290,26 @@ export default {
         }
       },
     },
+
+    created() {
+      window.addEventListener("scroll", this.handleScroll);
+    },
     methods: {
-        changePath(goToPath){
+      handleScroll() {
+        this.active = window.innerHeight-window.scrollY <= 36 ? true : false;
+      },
+      changePath(goToPath){
             this.$router.push(goToPath).catch((error) => {
                 if (error.name != "NavigationDuplicated") {
                 throw error;
                 }
             });
         }
-    },
-}
+    }
+  }
+
+  
+    
 </script>
 
 <style scoped lang="scss">

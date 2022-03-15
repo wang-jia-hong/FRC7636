@@ -1,24 +1,6 @@
 <template>
-  <v-footer dark padless>
-    <div id="footerSponsor">
-      <v-row class="justify-center align-center">
-        <v-col
-          cols="6"
-          class="text-center pt-10 my-8 pa-6"
-          v-for="(sponsor, index) in sponsors"
-          :key="index"
-        >
-          <a :href="sponsor.path">
-            <img 
-              :src="sponsor.logo"
-              class="sponsorsLogo"
-              style="height: 15%; width: 15%"
-            />
-          </a>
-        </v-col>
-      </v-row>
-    </div>
-    <v-row class="mt-5">
+  <v-footer light padless>
+    <v-row class="mt-5" no-gutters>
       <v-col cols="12" md="3" id="frclogo">
         <img src="../assets/FIRST_logo.png" />
       </v-col>
@@ -37,7 +19,7 @@
           class="title"
           :key="`link-${index}`"
         >
-          <router-link class="no-underline white--text" :to="link.path">
+          <router-link class="no-underline black--text" :to="link.path">
             {{ link.name }}
           </router-link>
         </div>
@@ -48,7 +30,7 @@
         <v-btn
           v-for="(icon, index) in icons"
           :key="`icon-${index}`"
-          class="white-text"
+          class="white-text button"
           :href="icon.path"
           target="_blank"
           icon
@@ -57,6 +39,17 @@
         </v-btn>
       </v-col>
     </v-row>
+
+    <div id="footerSponsor" class="justify-center align-center">
+      <v-row class="justify-center align-center" no-gutters>
+       <img 
+        :href="sponsor.path"  v-for="(sponsor, index) in sponsors"
+        :key="index"
+        :src="sponsor.logo"
+        class="sponsorsLogo text-center mb-0 pa-2"
+      />
+      </v-row>
+    </div>
   </v-footer>
 </template>
 
@@ -92,7 +85,7 @@ export default {
       },
       {
         title: "mdi-email",
-        path: "",
+        path: "mailto:frc7636@nehs.tc.edu.tw",
       },
     ],
     items: [

@@ -22,11 +22,14 @@
           :key="index"
         >
           <div class="size" style="color: black;">
-            {{ contact.name }}: <br />
+            {{ contact.name }}: 
             {{ contact.method }}
           </div>
         </v-col>
         <v-col cols="12" class="text-center my-8 pa-6">
+          <div class="size" style="color: black;">
+            Workshop
+          </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.331362841231!2d120.6258336!3d24.2301866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d1d68110173%3A0xf1a85cea689e4cac!2sNational%20Experimental%20High%20School%20at%20Central%20Taiwan%20Science%20Park!5e0!3m2!1sen!2stw!4v1613675378836!5m2!1sen!2stw"
             width="80%"
@@ -38,11 +41,10 @@
             tabindex="0"
           ></iframe>
           <div class="size" style="color: black;">
-            WorkShop:<br />
             No. 227, Pinghe Road, Daya District, Taichung City, 428
           </div>
         </v-col>
-        <v-col lg="6" md="6" sm="12" class="text-center my-8 pa-6">
+        <v-col lg="6" md="6" sm="12" class="text-center my-8 pa-6" offset-md="3">
           <v-row>
             <v-col cols="3" v-for="(icon, index) in icons" :key="index">
               <v-btn :href="icon.path" target="_blank" icon>
@@ -62,7 +64,7 @@ export default {
     contacts: [
       {
         name: "Tel",
-        method: " +886 4 2568 6850",
+        method: " +886425686850",
       },
       {
         name: "Email",

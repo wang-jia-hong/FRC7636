@@ -1,24 +1,36 @@
 @import "@/assets/scss/index.scss";
 
 #header {
-    background-color: $main-color;
-    text-align: center;
-}
-
-#bar {
-    background-color: $main-color;
-}
-
-#donatebtn {
     background-color: white;
-    font-weight: bold;
-    text-align: center;
-    color: $main-color;
-    height: 100%;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    border-radius: 5%;
+    position: sticky;
+    z-index: 10;
+    height: auto;
+    width: 100vw;
+    top: 0;
 }
+
+
+
+#header-logo {
+    width: auto;
+    float: left;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 0px !important;
+}
+
+.header-button { 
+    width: auto;
+    float: right;
+    margin-right: 15vw;
+    color: black;
+    
+}
+
+
+.menu {
+    background-color: white !important;
+}
+
+
 
