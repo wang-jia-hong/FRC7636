@@ -1,5 +1,5 @@
 <template>
-    <div id="outside">
+
     <div id="home">
         
         <div class="home-header" :class="{ none: active }">   
@@ -9,11 +9,11 @@
             
             <div class="header-button">
 
-                <v-btn class="mr-2" @click="changePath('/')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
+                <v-btn class="mr-3" @click="changePath('/')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
                     <a class="white--text btn-text" :class="{ none2: active }">Home</a>
                 </v-btn>
 
-                <v-btn class="mr-2" @click="changePath('/')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
+                <v-btn class="mr-3" @click="changePath('/')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
                     <v-menu open-on-hover down offset-y left>
                         <template v-slot:activator="{ on }">
                             <div text class="align-self-center" v-on="on">
@@ -33,7 +33,7 @@
                     </v-menu>
                 </v-btn>
 
-                <v-btn class="mr-2" @click="changePath('/')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
+                <v-btn class="mr-3" @click="changePath('/')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
                     <v-menu open-on-hover down offset-y left>
                         <template v-slot:activator="{ on }">
                             <div text class="align-self-center" v-on="on">
@@ -53,11 +53,11 @@
                     </v-menu>
                 </v-btn>
 
-                <v-btn class="mr-2" @click="changePath('/resource')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
+                <v-btn class="mr-3" @click="changePath('/resource')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
                     <a class="white--text btn-text" :class="{ none2: active }">Resource</a>
                 </v-btn>
 
-                <v-btn class="mr-2" @click="changePath('/sponsor')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
+                <v-btn class="mr-3" @click="changePath('/sponsor')" rounded color="transparent" elevation="0" x-small :class="{ none2: active }">
                     <a class="white--text btn-text" :class="{ none2: active }">Sponsor</a>
                 </v-btn>
 
@@ -197,7 +197,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 
 </template>
 

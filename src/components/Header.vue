@@ -7,11 +7,11 @@
     
     <div class="header-button">
 
-            <v-btn class="black--text mr-2" @click="changePath('/')" rounded color="transparent" elevation="0" x-small>
+            <v-btn class="black--text mr-3" @click="changePath('/')" rounded color="transparent" elevation="0" x-small>
                     <a class="black--text btn-text">Home</a>
                 </v-btn>
 
-                <v-btn class="black--text mr-2" @click="changePath('/')" rounded color="transparent" elevation="0" x-small>
+                <v-btn class="black--text mr-3" @click="changePath('/')" rounded color="transparent" elevation="0" x-small>
                     <v-menu open-on-hover down offset-y left>
                         <template v-slot:activator="{ on }">
                             <div text class="align-self-center" v-on="on">
@@ -31,7 +31,7 @@
                     </v-menu>
                 </v-btn>
 
-                <v-btn class="black--text mr-2" @click="changePath('/')" rounded color="transparent" elevation="0" x-small>
+                <v-btn class="black--text mr-3" @click="changePath('/')" rounded color="transparent" elevation="0" x-small>
                     <v-menu open-on-hover down offset-y left>
                         <template v-slot:activator="{ on }">
                             <div text class="align-self-center" v-on="on">
@@ -51,11 +51,11 @@
                     </v-menu>
                 </v-btn>
 
-                <v-btn class="black--text mr-2" @click="changePath('/resource')" rounded color="transparent" elevation="0" x-small>
+                <v-btn class="black--text mr-3" @click="changePath('/resource')" rounded color="transparent" elevation="0" x-small>
                     <a class="black--text btn-text">Resource</a>
                 </v-btn>
 
-                <v-btn class="black--text mr-2" @click="changePath('/sponsor')" rounded color="transparent" elevation="0" x-small>
+                <v-btn class="black--text mr-3" @click="changePath('/sponsor')" rounded color="transparent" elevation="0" x-small>
                     <a class="black--text btn-text">Sponsor</a>
                 </v-btn>
 
